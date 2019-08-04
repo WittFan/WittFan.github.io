@@ -148,12 +148,16 @@
     document.addEventListener("copy", copy);
     function copy(oEvent){
         var selection = window.getSelection();
-        var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
-        quoteMagic += "<!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more -->\n";
-        quoteMagic += "<!-- quote(start){ author: authorname, site: www.sitename.com, location: ";
-        quoteMagic += document.location.href;
-        quoteMagic += "} -->\n";
-        var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        if($(e)[0].className=="btn-copy"){
+          var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
+          quoteMagic += "<!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more -->\n";
+          quoteMagic += "<!-- quote(start){ author: authorname, site: www.sitename.com, location: ";
+          quoteMagic += document.location.href;
+          quoteMagic += "} -->\n";
+          var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        }else{
+          var copytext = selection
+        };
         oEvent.preventDefault();
         oEvent.clipboardData.setData("text", copytext);
     }
@@ -490,8 +494,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/03/hello-world-1/" rel="next" title="hello-world">
-                <i class="fa fa-chevron-left"></i> hello-world
+              <a href="/2019/08/03/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -577,7 +581,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -676,7 +680,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">929</span>
+    <span title="Site words total count">1.2k</span>
   
 </div>
 
@@ -1242,8 +1246,8 @@
 
 
    <!-- 代码块复制功能 -->
-   <!-- 代码块复制功能 -->
   <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
-  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
 </body>
 </html>

@@ -147,12 +147,16 @@
     document.addEventListener("copy", copy);
     function copy(oEvent){
         var selection = window.getSelection();
-        var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
-        quoteMagic += "<!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more -->\n";
-        quoteMagic += "<!-- quote(start){ author: authorname, site: www.sitename.com, location: ";
-        quoteMagic += document.location.href;
-        quoteMagic += "} -->\n";
-        var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        if($(e)[0].className=="btn-copy"){
+          var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
+          quoteMagic += "<!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more -->\n";
+          quoteMagic += "<!-- quote(start){ author: authorname, site: www.sitename.com, location: ";
+          quoteMagic += document.location.href;
+          quoteMagic += "} -->\n";
+          var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        }else{
+          var copytext = selection
+        };
         oEvent.preventDefault();
         oEvent.clipboardData.setData("text", copytext);
     }
@@ -408,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  855字
+                  1.1k字
                 </span>
               
 
@@ -635,152 +639,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.exobrain.online/2019/08/03/hello-world-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Witt Fan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/wittfan.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ExoBrain">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/03/hello-world-1/" itemprop="url">hello-world</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-03T20:56:46+08:00">
-                2019-08-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  0字
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/03/hello-world-1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.exobrain.online/2019/08/03/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -844,7 +702,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  74字
+                  73字
                 </span>
               
 
@@ -961,7 +819,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1060,7 +918,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">929</span>
+    <span title="Site words total count">1.2k</span>
   
 </div>
 
@@ -1611,8 +1469,8 @@
 
 
    <!-- 代码块复制功能 -->
-   <!-- 代码块复制功能 -->
   <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
-  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
 </body>
 </html>

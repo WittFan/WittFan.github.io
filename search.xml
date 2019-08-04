@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[为markdown创建一个新标记符]]></title>
+    <url>%2F2019%2F08%2F04%2F%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E6%A0%87%E8%AE%B0%E7%AC%A6%2F</url>
+    <content type="text"><![CDATA[问题的由来当我们在编写markdown文件的时候会经常从网页上ctr+c其他人的文字，而我们标注作者和文章的来源不是特别方便，这会导致许多时候我们不去标注作者和文章的来源。引文规范对于问题追溯和文明发展相当重要，与其道德说教来让大家遵守引文规范，不如提供更方便的方式来让大家遵守，因此，本文抛砖引玉出一种新的高效的规范和工具。 复制时天生携带引文信息将下面的javascript语句放到网页的head处 12345678910111213&lt;script type="text/javascript"&gt; document.addEventListener("copy", copy); function copy(oEvent)&#123; var selection = window.getSelection(); var quoteMagic = "&lt;!-- It's convenient in markdown file. --&gt;\n"; quoteMagic += "&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "; quoteMagic += document.location.href; quoteMagic += "&#125; --&gt;\n"; var copytext = quoteMagic + selection + "\n&lt;!-- quote(end) --&gt;"; oEvent.preventDefault(); oEvent.clipboardData.setData("text", copytext); &#125;&lt;/script&gt; 示例如下 123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;title&gt;Title&lt;/title&gt;&lt;script type="text/javascript"&gt; document.addEventListener("copy", copy); function copy(oEvent)&#123; var selection = window.getSelection(); var quoteMagic = "&lt;!-- It's convenient in markdown file. --&gt;\n"; quoteMagic += "&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "; quoteMagic += document.location.href; quoteMagic += "&#125; --&gt;\n"; var copytext = quoteMagic + selection + "\n&lt;!-- quote(end) --&gt;"; oEvent.preventDefault(); oEvent.clipboardData.setData("text", copytext); &#125;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;测试1&lt;br&gt;测试2&lt;/body&gt;&lt;/html&gt; 当我们运行网页，复制网页中内容后，将其粘贴到mardown文件，会得到下面的结果 测试1测试2]]></content>
+      <tags>
+        <tag>markdown javascript quote hexo next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[test password]]></title>
     <url>%2F2019%2F08%2F04%2Ftest-password%2F</url>
     <content type="text"></content>

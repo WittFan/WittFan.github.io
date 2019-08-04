@@ -144,11 +144,18 @@
   });
 </script>
 
-<script>
-document.body.oncopy = function () { setTimeout( function () { 
-  var text = clipboardData.getData("text"); 
-  if (text) { text = text + "\r\n文章源自：\r\nWittFan\r\n"+location.href; 
-  clipboardData.setData("text", text); } }, 100 ) }
+<script type="text/javascript">
+    document.addEventListener("copy", copy);
+    function copy(oEvent){
+        var selection = window.getSelection();
+        var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
+        quoteMagic += "<!-- quote(start){ author: WittFan, site: www.exobrain.online, location: ";
+        quoteMagic += document.location.href;
+        quoteMagic += "} -->\n";
+        var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        oEvent.preventDefault();
+        oEvent.clipboardData.setData("text", copytext);
+    }
 </script>
 
   <title>test password | ExoBrain</title>
@@ -510,6 +517,10 @@ document.body.oncopy = function () { setTimeout( function () {
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/08/04/为markdown创建一个新标记符/" rel="prev" title="为markdown创建一个新标记符">
+                为markdown创建一个新标记符 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -583,7 +594,7 @@ document.body.oncopy = function () { setTimeout( function () {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -596,7 +607,7 @@ document.body.oncopy = function () { setTimeout( function () {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -682,7 +693,7 @@ document.body.oncopy = function () { setTimeout( function () {
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">74</span>
+    <span title="Site words total count">468</span>
   
 </div>
 

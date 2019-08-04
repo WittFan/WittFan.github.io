@@ -143,11 +143,18 @@
   });
 </script>
 
-<script>
-document.body.oncopy = function () { setTimeout( function () { 
-  var text = clipboardData.getData("text"); 
-  if (text) { text = text + "\r\n文章源自：\r\nWittFan\r\n"+location.href; 
-  clipboardData.setData("text", text); } }, 100 ) }
+<script type="text/javascript">
+    document.addEventListener("copy", copy);
+    function copy(oEvent){
+        var selection = window.getSelection();
+        var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
+        quoteMagic += "<!-- quote(start){ author: WittFan, site: www.exobrain.online, location: ";
+        quoteMagic += document.location.href;
+        quoteMagic += "} -->\n";
+        var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        oEvent.preventDefault();
+        oEvent.clipboardData.setData("text", copytext);
+    }
 </script>
 
   <title>归档 | ExoBrain</title>
@@ -335,7 +342,7 @@ document.body.oncopy = function () { setTimeout( function () {
         
           
         
-        嗯..! 目前共计 3 篇日志。 继续努力。
+        嗯..! 目前共计 4 篇日志。 继续努力。
       </span>
 
       
@@ -349,6 +356,41 @@ document.body.oncopy = function () { setTimeout( function () {
           <div class="collection-title">
             <h1 class="archive-year" id="archive-year-2019">2019</h1>
           </div>
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/08/04/为markdown创建一个新标记符/" itemprop="url">
+              
+                <span itemprop="name">为markdown创建一个新标记符</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-08-04T17:18:42+08:00" content="2019-08-04">
+          08-04
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
         
         
 
@@ -503,7 +545,7 @@ document.body.oncopy = function () { setTimeout( function () {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -516,7 +558,7 @@ document.body.oncopy = function () { setTimeout( function () {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -602,7 +644,7 @@ document.body.oncopy = function () { setTimeout( function () {
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">74</span>
+    <span title="Site words total count">468</span>
   
 </div>
 

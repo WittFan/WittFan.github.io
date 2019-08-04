@@ -143,11 +143,18 @@
   });
 </script>
 
-<script>
-document.body.oncopy = function () { setTimeout( function () { 
-  var text = clipboardData.getData("text"); 
-  if (text) { text = text + "\r\n文章源自：\r\nWittFan\r\n"+location.href; 
-  clipboardData.setData("text", text); } }, 100 ) }
+<script type="text/javascript">
+    document.addEventListener("copy", copy);
+    function copy(oEvent){
+        var selection = window.getSelection();
+        var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
+        quoteMagic += "<!-- quote(start){ author: WittFan, site: www.exobrain.online, location: ";
+        quoteMagic += document.location.href;
+        quoteMagic += "} -->\n";
+        var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";
+        oEvent.preventDefault();
+        oEvent.clipboardData.setData("text", copytext);
+    }
 </script>
 
   <title>ExoBrain</title>
@@ -323,6 +330,151 @@ document.body.oncopy = function () { setTimeout( function () {
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.exobrain.online/2019/08/04/为markdown创建一个新标记符/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Witt Fan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/wittfan.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ExoBrain">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/04/为markdown创建一个新标记符/" itemprop="url">为markdown创建一个新标记符</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-04T17:18:42+08:00">
+                2019-08-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  394字
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          问题的由来当我们在编写markdown文件的时候会经常从网页上ctr+c其他人的文字，而我们标注作者和文章的来源不是特别方便，这会导致许多时候我们不去标注作者和文章的来源。引文规范对于问题追溯和文明发展相当重要，与其道德说教来让大家遵守引文规范，不如提供更方便的方式来让大家遵守，因此，本文抛砖引玉出
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/04/为markdown创建一个新标记符/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -808,7 +960,7 @@ document.body.oncopy = function () { setTimeout( function () {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -821,7 +973,7 @@ document.body.oncopy = function () { setTimeout( function () {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -907,7 +1059,7 @@ document.body.oncopy = function () { setTimeout( function () {
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">74</span>
+    <span title="Site words total count">468</span>
   
 </div>
 

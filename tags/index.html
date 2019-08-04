@@ -144,6 +144,12 @@
   });
 </script>
 
+<script>
+document.body.oncopy = function () { setTimeout( function () { 
+  var text = clipboardData.getData("text"); 
+  if (text) { text = text + "\r\n文章源自：\r\nWittFan\r\n"+location.href; 
+  clipboardData.setData("text", text); } }, 100 ) }
+</script>
 
   <title>tags | ExoBrain</title>
   

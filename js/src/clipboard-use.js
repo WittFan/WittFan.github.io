@@ -7,7 +7,7 @@ function copy(oEvent){
         console.log(btnCopyEmpty)
         var quoteMagic = "<!-- It's convenient in markdown file. -->\n";
         quoteMagic += "<!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more -->\n";
-        quoteMagic += "<!-- quote(start){ author: authorname, site: www.sitename.com, location: ";
+        quoteMagic += "<!-- quote(start){ author: WittFan, site: www.exobrain.online, location: ";
         quoteMagic += document.location.href;
         quoteMagic += "} -->\n";
         var copytext = quoteMagic + selection + "\n<!-- quote(end) -->";    

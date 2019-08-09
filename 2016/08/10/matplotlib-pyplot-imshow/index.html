@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="matplotlib,pyplot,imshow,">
 
 
 
@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="人拥有此生此世是不够的，他还需要一个诗意的世界。">
-<meta name="keywords" content="blog;">
+<meta name="description" content="123456789101112131415161718192021&quot;&quot;&quot;    demo04_imshow.py 绘制热成像图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n),                   np.linspace(">
+<meta name="keywords" content="matplotlib,pyplot,imshow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="matplotlib.pyplot.scatter">
-<meta property="og:url" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-scatter/index.html">
+<meta property="og:title" content="matplotlib.pyplot.imshow">
+<meta property="og:url" content="https://www.exobrain.online/2016/08/10/matplotlib-pyplot-imshow/index.html">
 <meta property="og:site_name" content="ExoBrain">
-<meta property="og:description" content="人拥有此生此世是不够的，他还需要一个诗意的世界。">
+<meta property="og:description" content="123456789101112131415161718192021&quot;&quot;&quot;    demo04_imshow.py 绘制热成像图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n),                   np.linspace(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-09T02:48:10.105Z">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/10/matplotlib-pyplot-imshow/Imshow.png">
+<meta property="og:updated_time" content="2019-08-09T04:06:59.729Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="matplotlib.pyplot.scatter">
-<meta name="twitter:description" content="人拥有此生此世是不够的，他还需要一个诗意的世界。">
+<meta name="twitter:title" content="matplotlib.pyplot.imshow">
+<meta name="twitter:description" content="123456789101112131415161718192021&quot;&quot;&quot;    demo04_imshow.py 绘制热成像图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n),                   np.linspace(">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/10/matplotlib-pyplot-imshow/Imshow.png">
 
 
 
@@ -122,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-scatter/">
+  <link rel="canonical" href="https://www.exobrain.online/2016/08/10/matplotlib-pyplot-imshow/">
 
 
 
@@ -147,7 +149,7 @@
   });
 </script>
 
-  <title>matplotlib.pyplot.scatter | ExoBrain</title>
+  <title>matplotlib.pyplot.imshow | ExoBrain</title>
   
 
 
@@ -333,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-scatter/">
+    <link itemprop="mainEntityOfPage" href="https://www.exobrain.online/2016/08/10/matplotlib-pyplot-imshow/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Witt Fan">
@@ -350,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">matplotlib.pyplot.scatter</h1>
+          <h1 class="post-title" itemprop="name headline">matplotlib.pyplot.imshow</h1>
         
 
         <div class="post-meta">
@@ -362,8 +364,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-09T09:47:24+08:00">
-                2016-08-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-10T16:02:24+08:00">
+                2016-08-10
               </time>
             
 
@@ -372,6 +374,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming-python-matplotlib/" itemprop="url" rel="index">
+                    <span itemprop="name">programming/python/matplotlib</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -399,7 +423,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0字
+                  96字
                 </span>
               
 
@@ -424,7 +448,10 @@
       
 
       
-        
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo04_imshow.py 绘制热成像图</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 整理数据</span></span><br><span class="line">n = <span class="number">500</span></span><br><span class="line">x, y = np.meshgrid(np.linspace(<span class="number">-3</span>, <span class="number">3</span>, n),</span><br><span class="line">                   np.linspace(<span class="number">-3</span>, <span class="number">3</span>, n))</span><br><span class="line"><span class="comment"># print(x, y)</span></span><br><span class="line"><span class="comment"># 计算每个坐标点的高度</span></span><br><span class="line">z = (<span class="number">1</span> - x/<span class="number">2</span> + x**<span class="number">5</span> + y**<span class="number">3</span>) * np.exp(-x**<span class="number">2</span> - y**<span class="number">2</span>)</span><br><span class="line"><span class="comment"># 绘制等高线</span></span><br><span class="line">plt.figure(<span class="string">'Imshow'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Imshow'</span>, fontsize=<span class="number">18</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">plt.imshow(z, cmap=<span class="string">'jet'</span>, origin=<span class="string">'lower'</span>)</span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.savefig(<span class="string">'Imshow.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2016/08/10/matplotlib-pyplot-imshow/Imshow.png" alt="Imshow"></p>
+
       
     </div>
     
@@ -463,6 +490,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/matplotlib/" rel="tag"> <i class="fa fa-tag"></i> matplotlib</a>
+          
+            <a href="/tags/pyplot/" rel="tag"> <i class="fa fa-tag"></i> pyplot</a>
+          
+            <a href="/tags/imshow/" rel="tag"> <i class="fa fa-tag"></i> imshow</a>
+          
+        </div>
+      
 
       
       
@@ -487,8 +524,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/09/matplotlib-pyplot-bar/" rel="next" title="matplotlib.pyplot.bar">
-                <i class="fa fa-chevron-left"></i> matplotlib.pyplot.bar
+              <a href="/2016/08/09/matplotlib-pyplot-contour/" rel="next" title="matplotlib.pyplot.contour">
+                <i class="fa fa-chevron-left"></i> matplotlib.pyplot.contour
               </a>
             
           </div>
@@ -497,8 +534,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/09/matplotlib-pyplot-plot/" rel="prev" title="matplotlib.pyplot.plot">
-                matplotlib.pyplot.plot <i class="fa fa-chevron-right"></i>
+              <a href="/2016/08/10/matplotlib-pyplot-pie/" rel="prev" title="matplotlib.pyplot.pie">
+                matplotlib.pyplot.pie <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

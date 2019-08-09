@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="12345678910111213141516171819202122import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 2">
+<meta name="description" content="123456789101112131415161718192021import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 23,">
 <meta name="keywords" content="matplotlib,pyplot,bar">
 <meta property="og:type" content="article">
 <meta property="og:title" content="matplotlib.pyplot.bar">
 <meta property="og:url" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-bar/index.html">
 <meta property="og:site_name" content="ExoBrain">
-<meta property="og:description" content="12345678910111213141516171819202122import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 2">
+<meta property="og:description" content="123456789101112131415161718192021import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 23,">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-bar/Bar.png">
-<meta property="og:updated_time" content="2019-08-09T03:30:56.375Z">
+<meta property="og:updated_time" content="2019-08-09T03:49:18.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.pyplot.bar">
-<meta name="twitter:description" content="12345678910111213141516171819202122import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 2">
+<meta name="twitter:description" content="123456789101112131415161718192021import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 23,">
 <meta name="twitter:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-bar/Bar.png">
 
 
@@ -387,8 +387,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/programming-python-pyplot/" itemprop="url" rel="index">
-                    <span itemprop="name">programming/python/pyplot</span>
+                  <a href="/categories/programming-python-matplotlib/" itemprop="url" rel="index">
+                    <span itemprop="name">programming/python/matplotlib</span>
                   </a>
                 </span>
 
@@ -448,7 +448,7 @@
       
 
       
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">apples = np.array([<span class="number">91</span>, <span class="number">86</span>, <span class="number">23</span>, <span class="number">89</span>, <span class="number">45</span>, <span class="number">62</span>, <span class="number">39</span>, <span class="number">84</span>, <span class="number">88</span>, <span class="number">99</span>, <span class="number">21</span>, <span class="number">33</span>])</span><br><span class="line">oranges = np.array([<span class="number">94</span>, <span class="number">59</span>, <span class="number">23</span>, <span class="number">21</span>, <span class="number">36</span>, <span class="number">91</span>, <span class="number">26</span>, <span class="number">23</span>, <span class="number">12</span>, <span class="number">199</span>, <span class="number">33</span>, <span class="number">44</span>])</span><br><span class="line">plt.figure(<span class="string">'Bar Chart'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Bar Chart'</span>, fontsize=<span class="number">18</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Month'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Volume'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.tick_params(labelsize=<span class="number">10</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">x = np.arange(<span class="number">1</span>, <span class="number">13</span>)</span><br><span class="line">plt.bar(x<span class="number">-0.2</span>, apples, <span class="number">.4</span>,color=<span class="string">'dodgerblue'</span>, label=<span class="string">'Apple'</span>)</span><br><span class="line">plt.bar(x+<span class="number">0.2</span>, oranges, <span class="number">.4</span>,color=<span class="string">'orangered'</span>, label=<span class="string">'Orange'</span>)</span><br><span class="line"><span class="comment"># 修改x的刻度文本</span></span><br><span class="line">plt.xticks(x, [<span class="string">'Jan'</span>, <span class="string">'Feb'</span>, <span class="string">'Mar'</span>, <span class="string">'Apr'</span>,</span><br><span class="line">               <span class="string">'Mar'</span>, <span class="string">'Jun'</span>, <span class="string">'Jul'</span>, <span class="string">'Aug'</span>,</span><br><span class="line">               <span class="string">'Sep'</span>, <span class="string">'Oct'</span>, <span class="string">'Nov'</span>, <span class="string">'Dec'</span>])</span><br><span class="line">plt.legend()</span><br><span class="line">plt.savefig(<span class="string">'Bar.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">apples = np.array([<span class="number">91</span>, <span class="number">86</span>, <span class="number">23</span>, <span class="number">89</span>, <span class="number">45</span>, <span class="number">62</span>, <span class="number">39</span>, <span class="number">84</span>, <span class="number">88</span>, <span class="number">99</span>, <span class="number">21</span>, <span class="number">33</span>])</span><br><span class="line">oranges = np.array([<span class="number">94</span>, <span class="number">59</span>, <span class="number">23</span>, <span class="number">21</span>, <span class="number">36</span>, <span class="number">91</span>, <span class="number">26</span>, <span class="number">23</span>, <span class="number">12</span>, <span class="number">199</span>, <span class="number">33</span>, <span class="number">44</span>])</span><br><span class="line">plt.figure(<span class="string">'Bar Chart'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Bar Chart'</span>, fontsize=<span class="number">18</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Month'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Volume'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.tick_params(labelsize=<span class="number">10</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">x = np.arange(<span class="number">1</span>, <span class="number">13</span>)</span><br><span class="line">plt.bar(x<span class="number">-0.2</span>, apples, <span class="number">.4</span>,color=<span class="string">'dodgerblue'</span>, label=<span class="string">'Apple'</span>)</span><br><span class="line">plt.bar(x+<span class="number">0.2</span>, oranges, <span class="number">.4</span>,color=<span class="string">'orangered'</span>, label=<span class="string">'Orange'</span>)</span><br><span class="line"><span class="comment"># 修改x的刻度文本</span></span><br><span class="line">plt.xticks(x, [<span class="string">'Jan'</span>, <span class="string">'Feb'</span>, <span class="string">'Mar'</span>, <span class="string">'Apr'</span>,</span><br><span class="line">               <span class="string">'Mar'</span>, <span class="string">'Jun'</span>, <span class="string">'Jul'</span>, <span class="string">'Aug'</span>,</span><br><span class="line">               <span class="string">'Sep'</span>, <span class="string">'Oct'</span>, <span class="string">'Nov'</span>, <span class="string">'Dec'</span>])</span><br><span class="line">plt.legend()</span><br><span class="line">plt.savefig(<span class="string">'Bar.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2016/08/09/matplotlib-pyplot-bar/Bar.png" alt="out figure"></p>
 
@@ -611,7 +611,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -622,7 +622,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -633,7 +633,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

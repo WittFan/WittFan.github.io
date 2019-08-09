@@ -36,7 +36,7 @@
   <entry>
     <title><![CDATA[matplotlib.pyplot.pie]]></title>
     <url>%2F2016%2F08%2F10%2Fmatplotlib-pyplot-pie%2F</url>
-    <content type="text"><![CDATA[12345678910111213141516171819202122&quot;&quot;&quot; demo03_pie.py 饼状图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据labels = [&apos;Python&apos;, &apos;JavaScript&apos;, &apos;C++&apos;, &apos;Java&apos;, &apos;PHP&apos;]values = [26, 17, 21, 29, 11]spaces = [0.05, 0.01, 0.01, 0.01, 0.01]colors = [&apos;dodgerblue&apos;, &apos;orangered&apos;, &apos;limegreen&apos;, &apos;violet&apos;, &apos;gold&apos;]plt.figure(&apos;pie&apos;, facecolor=&apos;lightgray&apos;)# title 不显示中文plt.title(r&apos;Pie Figure&apos;)# 等轴比例plt.axis(&apos;equal&apos;)plt.pie(values, spaces, labels, colors, &apos;%.2f%%&apos;, shadow=True, startangle=0, radius=1)plt.savefig(&apos;Pie.png&apos;)plt.show()]]></content>
+    <content type="text"><![CDATA[12345678910111213141516171819202122""" demo03_pie.py 饼状图"""import numpy as npimport matplotlib.pyplot as plt# 整理数据labels = ['Python', 'JavaScript', 'C++', 'Java', 'PHP']values = [26, 17, 21, 29, 11]spaces = [0.05, 0.01, 0.01, 0.01, 0.01]colors = ['dodgerblue', 'orangered', 'limegreen', 'violet', 'gold']plt.figure('pie', facecolor='lightgray')# title 不显示中文plt.title(r'Pie Figure')# 等轴比例plt.axis('equal')plt.pie(values, spaces, labels, colors, '%.2f%%', shadow=True, startangle=0, radius=1)plt.savefig('Pie.png')plt.show()]]></content>
       <categories>
         <category>programming/python/matplotlib</category>
       </categories>
@@ -47,9 +47,22 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[matplotlib.pyplot.imshow]]></title>
+    <url>%2F2016%2F08%2F10%2Fmatplotlib-pyplot-imshow%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021""" demo04_imshow.py 绘制热成像图"""import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n), np.linspace(-3, 3, n))# print(x, y)# 计算每个坐标点的高度z = (1 - x/2 + x**5 + y**3) * np.exp(-x**2 - y**2)# 绘制等高线plt.figure('Imshow', facecolor='lightgray')plt.title('Imshow', fontsize=18)plt.grid(linestyle=':')plt.imshow(z, cmap='jet', origin='lower')plt.colorbar()plt.savefig('Imshow.png')plt.show()]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>pyplot</tag>
+        <tag>imshow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[matplotlib.pyplot.contour]]></title>
     <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-contour%2F</url>
-    <content type="text"><![CDATA[1234567891011121314151617181920212223242526""" demo04_contour.py 绘制等高线图"""import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n), np.linspace(-3, 3, n))# print(x, y)# 计算每个坐标点的高度z = (1 - x/2 + x**5 + y**3) * np.exp(-x**2 - y**2)# 绘制等高线plt.figure('Contour', facecolor='lightgray')plt.title('Contour', fontsize=18)plt.grid(linestyle=':')cntr = plt.contour(x, y, z, 8, colors='black', linewidths=.5)# 绘制等高线的高度标签文本# inline_spacing 空白间距plt.clabel(cntr, inline_spacing=1, fmt='%.2f', fontsize=10)# 填充等高线plt.contourf(x, y, z, 8, cmap='jet')plt.savefig('Contour.png', linewidths=.5)plt.show()]]></content>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526""" demo04_contour.py 绘制等高线图"""import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n), np.linspace(-3, 3, n))# print(x, y)# 计算每个坐标点的高度z = (1 - x/2 + x**5 + y**3) * np.exp(-x**2 - y**2)# 绘制等高线plt.figure('Contour', facecolor='lightgray')plt.title('Contour', fontsize=18)plt.grid(linestyle=':')cntr = plt.contour(x, y, z, 8, colors='black', linewidths=.5)# 绘制等高线的高度标签文本# inline_spacing 空白间距plt.clabel(cntr, inline_spacing=1, fmt='%.2f', fontsize=10)# 填充等高线plt.contourf(x, y, z, 8, cmap='jet')plt.savefig('Contour.png')plt.show()]]></content>
       <categories>
         <category>programming/python/matplotlib</category>
       </categories>
@@ -72,9 +85,9 @@
   <entry>
     <title><![CDATA[matplotlib.pyplot.bar]]></title>
     <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-bar%2F</url>
-    <content type="text"><![CDATA[12345678910111213141516171819202122import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 23, 12, 199, 33, 44])plt.figure('Bar Chart', facecolor='lightgray')plt.title('Bar Chart', fontsize=18)plt.xlabel('Month', fontsize=16)plt.ylabel('Volume', fontsize=16)plt.tick_params(labelsize=10)plt.grid(linestyle=':')x = np.arange(1, 13)plt.bar(x-0.2, apples, .4,color='dodgerblue', label='Apple')plt.bar(x+0.2, oranges, .4,color='orangered', label='Orange')# 修改x的刻度文本plt.xticks(x, ['Jan', 'Feb', 'Mar', 'Apr', 'Mar', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])plt.legend()plt.savefig('Bar.png')plt.show()]]></content>
+    <content type="text"><![CDATA[123456789101112131415161718192021import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 23, 12, 199, 33, 44])plt.figure('Bar Chart', facecolor='lightgray')plt.title('Bar Chart', fontsize=18)plt.xlabel('Month', fontsize=16)plt.ylabel('Volume', fontsize=16)plt.tick_params(labelsize=10)plt.grid(linestyle=':')x = np.arange(1, 13)plt.bar(x-0.2, apples, .4,color='dodgerblue', label='Apple')plt.bar(x+0.2, oranges, .4,color='orangered', label='Orange')# 修改x的刻度文本plt.xticks(x, ['Jan', 'Feb', 'Mar', 'Apr', 'Mar', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])plt.legend()plt.savefig('Bar.png')plt.show()]]></content>
       <categories>
-        <category>programming/python/pyplot</category>
+        <category>programming/python/matplotlib</category>
       </categories>
       <tags>
         <tag>matplotlib</tag>

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[matplotlib.pyplot.fill_between]]></title>
+    <url>%2F2019%2F08%2F09%2Fmatplotlib-pyplot-fill-between%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python模块: deque]]></title>
+    <url>%2F2019%2F08%2F09%2Fpython%E6%A8%A1%E5%9D%97-deque%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Foundations of Modern Analysis(Friedman 1970)]]></title>
+    <url>%2F2019%2F08%2F08%2FFoundations-of-Modern-Analysis-Friedman-1970%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[为markdown创建一个新标记符]]></title>
     <url>%2F2019%2F08%2F04%2F%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6%2F</url>
     <content type="text"><![CDATA[问题的由来当我们在编写markdown文件的时候会经常从网页上ctr+c其他人的文字，而我们标注作者和文章的来源不是特别方便，这会导致许多时候我们不去标注作者和文章的来源。引文规范对于问题追溯和文明发展相当重要，与其道德说教来让大家遵守引文规范，不如提供更方便的方式来让大家遵守，因此，本文抛砖引玉出一种新的高效的规范和工具。 复制时天生携带引文信息将下面的javascript语句放到网页的head处 1234567891011121314&lt;script type="text/javascript"&gt; document.addEventListener("copy", copy); function copy(oEvent)&#123; var selection = window.getSelection(); var quoteMagic = "&lt;!-- It's convenient in markdown file. --&gt;\n"; quoteMagic += "&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"; quoteMagic += "&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "; quoteMagic += document.location.href; quoteMagic += "&#125; --&gt;\n"; var copytext = quoteMagic + selection + "\n&lt;!-- quote(end) --&gt;"; oEvent.preventDefault(); oEvent.clipboardData.setData("text", copytext); &#125;&lt;/script&gt; 示例如下 12345678910111213141516171819202122232425&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;title&gt;Title&lt;/title&gt;&lt;script type="text/javascript"&gt; document.addEventListener("copy", copy); function copy(oEvent)&#123; var selection = window.getSelection(); var quoteMagic = "&lt;!-- It's convenient in markdown file. --&gt;\n"; quoteMagic += "&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"; quoteMagic += "&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "; quoteMagic += document.location.href; quoteMagic += "&#125; --&gt;\n"; var copytext = quoteMagic + selection + "\n&lt;!-- quote(end) --&gt;"; oEvent.preventDefault(); oEvent.clipboardData.setData("text", copytext); &#125;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;测试1&lt;br&gt;测试2&lt;/body&gt;&lt;/html&gt; 当我们运行网页，复制网页中内容后，将其粘贴到mardown文件，会得到下面的结果 而其（在vscode+MarkDownPreview中）渲染成html的显示效果如下图这样我们就可以在不影响显示的情况下保留其引文信息。当然，html中保留引文信息的工作需要在markdown文件转换为html文件的过程中完成，转换工具和规范这里不做讨论，先留下个坑，或者其他人来完成吧，😃。 hexo的next主题下复制时附加引文信息找到hexo项目根目录，我的根目录是/blog在 ../blog/themes/next/layout/_partials/head目录下找到custom-head.swig文件，将下面的代码添加到文末就可以了。 1234567891011121314&lt;script type="text/javascript"&gt; document.addEventListener("copy", copy); function copy(oEvent)&#123; var selection = window.getSelection(); var quoteMagic = "&lt;!-- It's convenient in markdown file. --&gt;\n"; quoteMagic += "&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"; quoteMagic += "&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "; quoteMagic += document.location.href; quoteMagic += "&#125; --&gt;\n"; var copytext = quoteMagic + selection + "\n&lt;!-- quote(end) --&gt;"; oEvent.preventDefault(); oEvent.clipboardData.setData("text", copytext); &#125;&lt;/script&gt; 将hexo-next下的文末出处去掉将文件../blog/themes/next/_config.yml（blog为我的hexo根目录）中的post_copyright项下的enable的值从true改为false 12345# Declare license on postspost_copyright: enable: true license: CC BY-NC-SA 3.0 license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/ 改完后为 12345# Declare license on postspost_copyright: enable: false license: CC BY-NC-SA 3.0 license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/ 之后文章末尾就不会再出现下图的情形了 如果使用了代码复制功能怎么改当使用代码复制功能的时候，我们希望复制到干净的代码，却不想得到引用信息;而在复制文章内容的时候，我们希望得到引文信息。 笔者使用的是这个链接下实现的代码复制功能，https://yfzhou.coding.me/2018/08/27/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E5%88%B6%E5%8A%9F%E8%83%BD%EF%BC%89/ 我的办法是：将clipboard-use.js文件的代码进行了一下升级，加了if语句。可以理解成将custom-head.swig文件里的那个添加引用的代码整合到了clipboard-use.js文件里。 1234567891011121314151617181920212223242526272829303132333435363738394041 /*页面载入完成后，创建复制按钮*/var btnCopyEmpty = true;document.addEventListener("copy", copy);function copy(oEvent)&#123; var selection = window.getSelection(); if(btnCopyEmpty)&#123; console.log(btnCopyEmpty) var quoteMagic = "&lt;!-- It's convenient in markdown file. --&gt;\n"; quoteMagic += "&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"; quoteMagic += "&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "; quoteMagic += document.location.href; quoteMagic += "&#125; --&gt;\n"; var copytext = quoteMagic + selection + "\n&lt;!-- quote(end) --&gt;"; &#125;else&#123; var copytext = selection; &#125; oEvent.preventDefault(); oEvent.clipboardData.setData("text", copytext);&#125;;!function (e, t, a) &#123; /* code */var initCopyCode = function()&#123; var copyHtml = ''; copyHtml += '&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'; //fa fa-globe可以去字体库替换自己想要的图标copyHtml += ' &lt;i class="fa fa-clipboard"&gt;&lt;/i&gt;&lt;span&gt;copy&lt;/span&gt;'; copyHtml += '&lt;/button&gt;'; $(".highlight .code pre").before(copyHtml); new ClipboardJS('.btn-copy', &#123; target: function(trigger) &#123; btnCopyEmpty = false; return trigger.nextElementSibling; &#125; &#125;); // clipboard.on('success', function(e)&#123; // btnCopyEmpty = false; // &#125;);&#125;initCopyCode();&#125;(window, document);]]></content>
@@ -24,9 +39,60 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[matplotlib.pyplot.pie]]></title>
+    <url>%2F2016%2F08%2F10%2Fmatplotlib-pyplot-pie%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122&quot;&quot;&quot; demo03_pie.py 饼状图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据labels = [&apos;Python&apos;, &apos;JavaScript&apos;, &apos;C++&apos;, &apos;Java&apos;, &apos;PHP&apos;]values = [26, 17, 21, 29, 11]spaces = [0.05, 0.01, 0.01, 0.01, 0.01]colors = [&apos;dodgerblue&apos;, &apos;orangered&apos;, &apos;limegreen&apos;, &apos;violet&apos;, &apos;gold&apos;]plt.figure(&apos;pie&apos;, facecolor=&apos;lightgray&apos;)# title 不显示中文plt.title(r&apos;Pie Figure&apos;)# 等轴比例plt.axis(&apos;equal&apos;)plt.pie(values, spaces, labels, colors, &apos;%.2f%%&apos;, shadow=True, startangle=0, radius=1)plt.savefig(&apos;Pie.png&apos;)plt.show()]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[matplotlib.pyplot.contour]]></title>
+    <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-contour%2F</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526""" demo04_contour.py 绘制等高线图"""import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n), np.linspace(-3, 3, n))# print(x, y)# 计算每个坐标点的高度z = (1 - x/2 + x**5 + y**3) * np.exp(-x**2 - y**2)# 绘制等高线plt.figure('Contour', facecolor='lightgray')plt.title('Contour', fontsize=18)plt.grid(linestyle=':')cntr = plt.contour(x, y, z, 8, colors='black', linewidths=.5)# 绘制等高线的高度标签文本# inline_spacing 空白间距plt.clabel(cntr, inline_spacing=1, fmt='%.2f', fontsize=10)# 填充等高线plt.contourf(x, y, z, 8, cmap='jet')plt.savefig('Contour.png', linewidths=.5)plt.show()]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>pyplot</tag>
+        <tag>contour</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[matplotlib.pyplot.plot]]></title>
+    <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-plot%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[matplotlib.pyplot.scatter]]></title>
+    <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-scatter%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[matplotlib.pyplot.bar]]></title>
+    <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-bar%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122import numpy as npimport matplotlib.pyplot as pltapples = np.array([91, 86, 23, 89, 45, 62, 39, 84, 88, 99, 21, 33])oranges = np.array([94, 59, 23, 21, 36, 91, 26, 23, 12, 199, 33, 44])plt.figure('Bar Chart', facecolor='lightgray')plt.title('Bar Chart', fontsize=18)plt.xlabel('Month', fontsize=16)plt.ylabel('Volume', fontsize=16)plt.tick_params(labelsize=10)plt.grid(linestyle=':')x = np.arange(1, 13)plt.bar(x-0.2, apples, .4,color='dodgerblue', label='Apple')plt.bar(x+0.2, oranges, .4,color='orangered', label='Orange')# 修改x的刻度文本plt.xticks(x, ['Jan', 'Feb', 'Mar', 'Apr', 'Mar', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])plt.legend()plt.savefig('Bar.png')plt.show()]]></content>
+      <categories>
+        <category>programming/python/pyplot</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>pyplot</tag>
+        <tag>bar</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[real analysis: outer measure]]></title>
+    <url>%2F2016%2F08%2F09%2Freal-analysis-outer-measure%2F</url>
+    <content type="text"><![CDATA[两种方式从outer measure 到 lebesgue measure1: outer measure + inter measure2: outer measure]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[real analysis: measure]]></title>
+    <url>%2F2016%2F08%2F09%2Freal-analysis-measure%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[vim常用命令]]></title>
     <url>%2F2016%2F08%2F08%2Fvim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[一些常用的vim快捷键（命令模式下）选中后 “+y(+也是按键) 复制到系统剪切板viw 选中光标所在的单词gg 到文档顶部G 到文档底部n,md 删除从n到m行u 撤销到上一步v 进入到visual模式dd 删除当前行yy 复制当前行b光标跳转到上一个单词w光标跳转到下一个单词:/要搜索的词 + 回车 搜索i insert模式 ，任意模式模式下按esc进入到命令模式o 移动到光标下一行并新建一行O 移动到光标上一行并新建一行$ 移动光标到行尾 ^ 移动光标到行首]]></content>
+    <content type="text"><![CDATA[一些常用的vim快捷键（命令模式下）选中后 “+y(+也是按键) 复制到系统剪切板viw 选中光标所在的单词gg 到文档顶部G 到文档底部n,md 删除从n到m行u 撤销到上一步v 进入到visual模式dd 删除当前行yy 复制当前行b光标跳转到上一个单词w光标跳转到下一个单词:/要搜索的词 + 回车 搜索i insert模式 ，任意模式模式下按esc进入到命令模式o 移动到光标下一行并新建一行O 移动到光标上一行并新建一行$ 移动光标到行尾 ^ 移动光标到行首 缩进单行代码是两个大于号’&gt;&gt;’回缩就是两个小于号’&lt;&lt;’如果想要缩进很多行代码的话就按照下面做 1 //在这里按下’v’进入选择模式111111//光标移动到这里，再按一次大于号’&gt;’缩进一次，按’6&gt;’缩进六次，按’&lt;’回缩。以下同理 ：%s/vivian/sky/g（等同于：g/vivian/s//sky/g）替换每一行中所有 vivian 为 sky]]></content>
       <categories>
         <category>programming/linux/vim</category>
       </categories>

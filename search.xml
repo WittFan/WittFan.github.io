@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[matplotlib.pyplot.fill_between]]></title>
-    <url>%2F2019%2F08%2F09%2Fmatplotlib-pyplot-fill-between%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[python模块: deque]]></title>
     <url>%2F2019%2F08%2F09%2Fpython%E6%A8%A1%E5%9D%97-deque%2F</url>
     <content type="text"></content>
@@ -42,6 +37,14 @@
     <title><![CDATA[matplotlib.pyplot.pie]]></title>
     <url>%2F2016%2F08%2F10%2Fmatplotlib-pyplot-pie%2F</url>
     <content type="text"><![CDATA[12345678910111213141516171819202122&quot;&quot;&quot; demo03_pie.py 饼状图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据labels = [&apos;Python&apos;, &apos;JavaScript&apos;, &apos;C++&apos;, &apos;Java&apos;, &apos;PHP&apos;]values = [26, 17, 21, 29, 11]spaces = [0.05, 0.01, 0.01, 0.01, 0.01]colors = [&apos;dodgerblue&apos;, &apos;orangered&apos;, &apos;limegreen&apos;, &apos;violet&apos;, &apos;gold&apos;]plt.figure(&apos;pie&apos;, facecolor=&apos;lightgray&apos;)# title 不显示中文plt.title(r&apos;Pie Figure&apos;)# 等轴比例plt.axis(&apos;equal&apos;)plt.pie(values, spaces, labels, colors, &apos;%.2f%%&apos;, shadow=True, startangle=0, radius=1)plt.savefig(&apos;Pie.png&apos;)plt.show()]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>pyplot</tag>
+        <tag>pie</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[matplotlib.pyplot.contour]]></title>
@@ -77,6 +80,19 @@
         <tag>matplotlib</tag>
         <tag>pyplot</tag>
         <tag>bar</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[matplotlib.pyplot.fill_between]]></title>
+    <url>%2F2016%2F08%2F09%2Fmatplotlib-pyplot-fill-between%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324""" demo_01_fill.py plot里的填充"""import numpy as npimport matplotlib.pyplot as pltx = np.linspace(0, 8*np.pi, 1000)sinx = np.sin(x)cosx = np.cos(x/2)/2plt.figure('Fill', facecolor='lightgray')plt.title('Fill', fontsize=18)plt.grid(linestyle=':')plt.plot(x, sinx, color='dodgerblue', label='sin(x)')plt.plot(x, cosx, color='orangered', label='cos(x)')plt.fill_between(x, sinx, cosx, sinx&lt;cosx, color='dodgerblue', alpha=.3)plt.fill_between(x, sinx, cosx, sinx&gt;cosx, color='orangered', alpha=.3)plt.legend()plt.savefig('fill_between.png')plt.show()]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>pyplot</tag>
+        <tag>fill_between</tag>
       </tags>
   </entry>
   <entry>

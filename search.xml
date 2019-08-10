@@ -4,11 +4,18 @@
     <title><![CDATA[hexo使用日常]]></title>
     <url>%2F2019%2F08%2F10%2Fhexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>programming/nodejs/hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>日常积累</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[pandas read_table]]></title>
     <url>%2F2019%2F08%2F09%2Fpandas-read-table%2F</url>
-    <content type="text"><![CDATA[https://blog.csdn.net/u012131430/article/details/78299582]]></content>
+    <content type="text"><![CDATA[pandas.read_csv参数详解pandas.read_csv参数整理 读取CSV（逗号分割）文件到DataFrame也支持文件的部分导入和选择迭代更多帮助参见：http://pandas.pydata.org/pandas-docs/stable/io.html参数： filepath_or_buffer : str，pathlib。str, pathlib.Path, py._path.local.LocalPath or any object with a read() method (such as a file handle or StringIO)可以是URL，可用URL类型包括：http, ftp, s3和文件。对于多文件正在准备中本地文件读取实例：://localhost/path/to/table.csv sep : str, default ‘,’指定分隔符。如果不指定参数，则会尝试使用逗号分隔。分隔符长于一个字符并且不是‘\s+’,将使用python的语法分析器。并且忽略数据中的逗号。正则表达式例子：’\r\t’ delimiter : str, default None定界符，备选分隔符（如果指定该参数，则sep参数失效） delim_whitespace : boolean, default False.指定空格(例如’ ‘或者’ ‘)是否作为分隔符使用，等效于设定sep=’\s+’。如果这个参数设定为Ture那么delimiter 参数失效。在新版本0.18.1支持 header : int or list of ints, default ‘infer’指定行数用来作为列名，数据开始行数。如果文件中没有列名，则默认为0，否则设置为None。如果明确设定header=0 就会替换掉原来存在列名。header参数可以是一个list例如：[0,1,3]，这个list表示将文件中的这些行作为列标题（意味着每一列有多个标题），介于中间的行将被忽略掉（例如本例中的2；本例中的数据1,2,4行将被作为多级标题出现，第3行数据将被丢弃，dataframe的数据从第5行开始。）。注意：如果skip_blank_lines=True 那么header参数忽略注释行和空行，所以header=0表示第一行数据而不是文件的第一行。 names : array-like, default None用于结果的列名列表，如果数据文件中没有列标题行，就需要执行header=None。默认列表中不能出现重复，除非设定参数mangle_dupe_cols=True。 index_col : int or sequence or False, default None用作行索引的列编号或者列名，如果给定一个序列则有多个行索引。如果文件不规则，行尾有分隔符，则可以设定index_col=False 来是的pandas不适用第一列作为行索引。 usecols : array-like, default None返回一个数据子集，该列表中的值必须可以对应到文件中的位置（数字可以对应到指定的列）或者是字符传为文件中的列名。例如：usecols有效参数可能是 [0,1,2]或者是 [‘foo’, ‘bar’, ‘baz’]。使用这个参数可以加快加载速度并降低内存消耗。 as_recarray : boolean, default False不赞成使用：该参数会在未来版本移除。请使用pd.read_csv(…).to_records()替代。返回一个Numpy的recarray来替代DataFrame。如果该参数设定为True。将会优先squeeze参数使用。并且行索引将不再可用，索引列也将被忽略。 squeeze : boolean, default False如果文件值包含一列，则返回一个Series prefix : str, default None在没有列标题时，给列添加前缀。例如：添加‘X’ 成为 X0, X1, … mangle_dupe_cols : boolean, default True重复的列，将‘X’…’X’表示为‘X.0’…’X.N’。如果设定为false则会将所有重名列覆盖。 dtype : Type name or dict of column -&gt; type, default None每列数据的数据类型。例如 {‘a’: np.float64, ‘b’: np.int32} engine : {‘c’, ‘python’}, optionalParser engine to use. The C engine is faster while the python engine is currently more feature-complete.使用的分析引擎。可以选择C或者是python。C引擎快但是Python引擎功能更加完备。 converters : dict, default None列转换函数的字典。key可以是列名或者列的序号。 true_values : list, default NoneValues to consider as True false_values : list, default NoneValues to consider as False skipinitialspace : boolean, default False忽略分隔符后的空白（默认为False，即不忽略）. skiprows : list-like or integer, default None需要忽略的行数（从文件开始处算起），或需要跳过的行号列表（从0开始）。 skipfooter : int, default 0从文件尾部开始忽略。 (c引擎不支持) skip_footer : int, default 0不推荐使用：建议使用skipfooter ，功能一样。 nrows : int, default None需要读取的行数（从文件头开始算起）。 na_values : scalar, str, list-like, or dict, default None一组用于替换NA/NaN的值。如果传参，需要制定特定列的空值。默认为‘1.#IND’, ‘1.#QNAN’, ‘N/A’, ‘NA’, ‘NULL’, ‘NaN’, ‘nan’`. keep_default_na : bool, default True如果指定na_values参数，并且keep_default_na=False，那么默认的NaN将被覆盖，否则添加。 na_filter : boolean, default True是否检查丢失值（空字符串或者是空值）。对于大文件来说数据集中没有空值，设定na_filter=False可以提升读取速度。 verbose : boolean, default False是否打印各种解析器的输出信息，例如：“非数值列中缺失值的数量”等。 skip_blank_lines : boolean, default True如果为True，则跳过空行；否则记为NaN。 parse_dates : boolean or list of ints or names or list of lists or dict, default Falseboolean. True -&gt; 解析索引list of ints or names. e.g. If [1, 2, 3] -&gt; 解析1,2,3列的值作为独立的日期列；list of lists. e.g. If [[1, 3]] -&gt; 合并1,3列作为一个日期列使用dict, e.g. {‘foo’ : [1, 3]} -&gt; 将1,3列合并，并给合并后的列起名为”foo” infer_datetime_format : boolean, default False如果设定为True并且parse_dates 可用，那么pandas将尝试转换为日期类型，如果可以转换，转换方法并解析。在某些情况下会快5~10倍。 keep_date_col : boolean, default False如果连接多列解析日期，则保持参与连接的列。默认为False。 date_parser : function, default None用于解析日期的函数，默认使用dateutil.parser.parser来做转换。Pandas尝试使用三种不同的方式解析，如果遇到问题则使用下一种方式。1.使用一个或者多个arrays（由parse_dates指定）作为参数；2.连接指定多列字符串作为一个列作为参数；3.每行调用一次date_parser函数来解析一个或者多个字符串（由parse_dates指定）作为参数。 dayfirst : boolean, default FalseDD/MM格式的日期类型 iterator : boolean, default False返回一个TextFileReader 对象，以便逐块处理文件。 chunksize : int, default None文件块的大小， See IO Tools docs for more informationon iterator and chunksize. compression : {‘infer’, ‘gzip’, ‘bz2’, ‘zip’, ‘xz’, None}, default ‘infer’直接使用磁盘上的压缩文件。如果使用infer参数，则使用 gzip, bz2, zip或者解压文件名中以‘.gz’, ‘.bz2’, ‘.zip’, or ‘xz’这些为后缀的文件，否则不解压。如果使用zip，那么ZIP包中国必须只包含一个文件。设置为None则不解压。新版本0.18.1版本支持zip和xz解压 thousands : str, default None千分位分割符，如“，”或者“.” decimal : str, default ‘.’字符中的小数点 (例如：欧洲数据使用’，‘). float_precision : string, default NoneSpecifies which converter the C engine should use for floating-point values. The options are None for the ordinary converter, high for the high-precision converter, and round_trip for the round-trip converter.指定 lineterminator : str (length 1), default None行分割符，只在C解析器下使用。 quotechar : str (length 1), optional引号，用作标识开始和解释的字符，引号内的分割符将被忽略。 quoting : int or csv.QUOTE_* instance, default 0控制csv中的引号常量。可选 QUOTE_MINIMAL (0), QUOTE_ALL (1), QUOTE_NONNUMERIC (2) or QUOTE_NONE (3) doublequote : boolean, default True双引号，当单引号已经被定义，并且quoting 参数不是QUOTE_NONE的时候，使用双引号表示引号内的元素作为一个元素使用。 escapechar : str (length 1), default None当quoting 为QUOTE_NONE时，指定一个字符使的不受分隔符限值。 comment : str, default None标识着多余的行不被解析。如果该字符出现在行首，这一行将被全部忽略。这个参数只能是一个字符，空行（就像skip_blank_lines=True）注释行被header和skiprows忽略一样。例如如果指定comment=’#’ 解析‘#empty\na,b,c\n1,2,3’ 以header=0 那么返回结果将是以’a,b,c’作为header。 encoding : str, default None指定字符集类型，通常指定为’utf-8’. List of Python standard encodings dialect : str or csv.Dialect instance, default None如果没有指定特定的语言，如果sep大于一个字符则忽略。具体查看csv.Dialect 文档 tupleize_cols : boolean, default FalseLeave a list of tuples on columns as is (default is to convert to a Multi Index on the columns) error_bad_lines : boolean, default True如果一行包含太多的列，那么默认不会返回DataFrame ，如果设置成false，那么会将改行剔除（只能在C解析器下使用）。 warn_bad_lines : boolean, default True如果error_bad_lines =False，并且warn_bad_lines =True 那么所有的“bad lines”将会被输出（只能在C解析器下使用）。 low_memory : boolean, default True分块加载到内存，再低内存消耗中解析。但是可能出现类型混淆。确保类型不被混淆需要设置为False。或者使用dtype 参数指定类型。注意使用chunksize 或者iterator 参数分块读入会将整个文件读入到一个Dataframe，而忽略类型（只能在C解析器中有效） buffer_lines : int, default None不推荐使用，这个参数将会在未来版本移除，因为他的值在解析器中不推荐使用 compact_ints : boolean, default False不推荐使用，这个参数将会在未来版本移除如果设置compact_ints=True ，那么任何有整数类型构成的列将被按照最小的整数类型存储，是否有符号将取决于use_unsigned 参数 use_unsigned : boolean, default False不推荐使用：这个参数将会在未来版本移除如果整数列被压缩(i.e. compact_ints=True)，指定被压缩的列是有符号还是无符号的。memory_map : boolean, default False如果使用的文件在内存内，那么直接map文件使用。使用这种方式可以避免文件再次进行IO操作。https://blog.csdn.net/u012131430/article/details/78299582]]></content>
   </entry>
   <entry>
     <title><![CDATA[商品期货协整配对]]></title>
@@ -33,10 +40,10 @@
         <category>programming/nodejs/hexo</category>
       </categories>
       <tags>
+        <tag>hexo</tag>
         <tag>markdown</tag>
         <tag>javascript</tag>
         <tag>quote</tag>
-        <tag>hexo</tag>
         <tag>next</tag>
       </tags>
   </entry>
@@ -49,9 +56,37 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[matplotlib.pyplot:dates]]></title>
+    <url>%2F2016%2F08%2F12%2Fmatplotlib-pyplot-dates%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152""" demo12_loadtxt.py aapl.csv文件读取"""import numpy as npimport datetime as dtimport matplotlib.pyplot as pltimport matplotlib.dates as mddef dmy2ymd(dmy): dmy = str(dmy, encoding='utf-8') time = dt.datetime.strptime(dmy, '%d-%m-%Y').date() t = time.strftime('%Y-%m-%d') return t# dtype中的dates为M8[D], &lt;class 'numpy.ndarray'&gt;dates, opening_prices, highest_prices,\ lowest_prices, closing_prices = np.loadtxt( '../data/aapl.csv', delimiter=',', usecols=(1, 3, 4, 5, 6), unpack=True, dtype='M8[D], f8, f8, f8, f8', converters=&#123;1: dmy2ymd&#125; # 转换器函数)# 绘制收盘价折线图plt.figure('AAPL K', facecolor='lightgray')plt.title('AAPL K', fontsize=16)plt.xlabel('Day', fontsize=14)plt.ylabel('Price', fontsize=14)plt.tick_params(labelsize=10)plt.grid(linestyle=':')# 为了日期显示合理，修改dates的dtypedates = dates.astype(md.datetime.datetime)# 设置x轴刻度定位器ax = plt.gca()#设置主刻度定位器为周定位器（每周一显示主刻度文本）ax.xaxis.set_major_locator(md.WeekdayLocator(byweekday=md.MO))ax.xaxis.set_major_formatter(md.DateFormatter('%d %b %Y'))#设置次刻度定位器为日定位器ax.xaxis.set_minor_locator(md.DayLocator())plt.tick_params(labelsize=8)plt.plot(dates, closing_prices, color='dodgerblue', linewidth=2, linestyle='--', label='AAPL CP')plt.legend()plt.gcf().autofmt_xdate()plt.savefig('Apple_stock_prices_with_dates.png')plt.show()]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>pyplot</tag>
+        <tag>dates</tag>
+        <tag>loadtxt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[matplotlib.pyplot.FuncAnimation:data_generator]]></title>
+    <url>%2F2016%2F08%2F12%2Fmatplotlib-pyplot-FuncAnimation-data-generator%2F</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041import numpy as npimport matplotlib.pyplot as pltimport matplotlib.animation as maplt.figure("Signal", facecolor='lightgray')plt.title("Signal", fontsize=14)plt.xlim(0, 10)plt.ylim(-3, 3)plt.grid(linestyle='--', color='lightgray', alpha=0.5)pl = plt.plot([], [], color='dodgerblue', label='Signal')[0]pl.set_data([],[])x = 0def y_generator(): global x while True: y = np.sin(2 * np.pi * x) * np.exp(np.sin(0.2 * np.pi * x)) yield (x, y) x += 0.05data = y_generator()t, v = [], []def update(i): print(i) global data x, y = next(data) t.append(x) v.append(y) #重新设置数据源 pl.set_data(t, v) #移动坐标轴 if(t[-1]&gt;10): plt.xlim(t[-1]-10, t[-1])# save_count为缓存的帧数，# frames 为帧数如果是可迭代对象，可迭代对象的长度将覆盖save_count参数anim = ma.FuncAnimation(plt.gcf(), update, frames=400, interval=40)plt.tight_layout()anim.save('Signal_animation.gif', fps=75,writer='imagemagick')# 如果show 必须放在save后面plt.show()]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>animation</tag>
+        <tag>FuncAnimation</tag>
+        <tag>data_generator</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[matplotlib.animation.FuncAnimation]]></title>
     <url>%2F2016%2F08%2F12%2Fmatplotlib-animation-FuncAnimation%2F</url>
-    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041424344import numpy as npimport matplotlib.pyplot as pltimport matplotlib.animation as ma# 初始化构建所有样本n = 100balls = np.zeros(n, dtype=[ ('position', float, 2), ('size', float, 1), ('growth', float, 1), ('color', float, 4)])balls['position'] = np.random.uniform(0, 1, (n, 2))balls['size'] = np.random.uniform(40, 50, n)balls['growth'] = np.random.uniform(10, 20, n)balls['color'] = np.random.uniform(0, 1, (n, 4))# 绘制图像plt.figure('Bubble', facecolor='lightgray')plt.title('Bubble', fontsize=16)sc = plt.scatter(balls['position'][:, 0], balls['position'][:, 1], balls['size'], color=balls['color'])plt.xticks([])plt.yticks([])# 实现动画def update(number): # 更新界面, 让每个点不断变大 balls['size'] += balls['growth'] sc.set_sizes(balls['size']) index = number % n balls['size'][index] = \ np.random.uniform(40, 70, 1) balls['position'][index] = \ np.random.uniform(0, 1, (1, 2)) # 更新界面 sc.set_sizes(balls['size']) sc.set_offsets(balls['position'])# 每隔三十毫秒，执行一次update函数anim = ma.FuncAnimation( plt.gcf(), update, interval=30)plt.show()# 使用imagemagick 保存为gif# 提前 sudo apt-get install imagemagickanim.save('bubble_animation.gif', writer='imagemagick')]]></content>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324252627282930313233343536373839404142434445import numpy as npimport matplotlib.pyplot as pltimport matplotlib.animation as ma# 初始化构建所有样本n = 100balls = np.zeros(n, dtype=[ ('position', float, 2), ('size', float, 1), ('growth', float, 1), ('color', float, 4)])balls['position'] = np.random.uniform(0, 1, (n, 2))balls['size'] = np.random.uniform(40, 50, n)balls['growth'] = np.random.uniform(10, 20, n)balls['color'] = np.random.uniform(0, 1, (n, 4))# 绘制图像plt.figure('Bubble', facecolor='lightgray')plt.title('Bubble', fontsize=16)sc = plt.scatter(balls['position'][:, 0], balls['position'][:, 1], balls['size'], color=balls['color'])plt.xticks([])plt.yticks([])# 实现动画def update(number): # 更新界面, 让每个点不断变大 balls['size'] += balls['growth'] sc.set_sizes(balls['size']) index = number % n balls['size'][index] = \ np.random.uniform(40, 70, 1) balls['position'][index] = \ np.random.uniform(0, 1, (1, 2)) # 更新界面 sc.set_sizes(balls['size']) sc.set_offsets(balls['position'])# 每隔三十毫秒，执行一次update函数# 使用imagemagick 保存为gif# 提前 sudo apt-get install imagemagickanim = ma.FuncAnimation( plt.gcf(), update, interval=30, save_count=50)anim.save('bubble_animation.gif',fps=500, writer='imagemagick')plt.show()]]></content>
       <categories>
         <category>programming/python/matplotlib</category>
       </categories>

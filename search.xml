@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo使用日常]]></title>
+    <url>%2F2019%2F08%2F10%2Fhexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[pandas read_table]]></title>
     <url>%2F2019%2F08%2F09%2Fpandas-read-table%2F</url>
     <content type="text"><![CDATA[https://blog.csdn.net/u012131430/article/details/78299582]]></content>
@@ -44,16 +49,40 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[matplotlib.animation.FuncAnimation]]></title>
+    <url>%2F2016%2F08%2F12%2Fmatplotlib-animation-FuncAnimation%2F</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041424344import numpy as npimport matplotlib.pyplot as pltimport matplotlib.animation as ma# 初始化构建所有样本n = 100balls = np.zeros(n, dtype=[ ('position', float, 2), ('size', float, 1), ('growth', float, 1), ('color', float, 4)])balls['position'] = np.random.uniform(0, 1, (n, 2))balls['size'] = np.random.uniform(40, 50, n)balls['growth'] = np.random.uniform(10, 20, n)balls['color'] = np.random.uniform(0, 1, (n, 4))# 绘制图像plt.figure('Bubble', facecolor='lightgray')plt.title('Bubble', fontsize=16)sc = plt.scatter(balls['position'][:, 0], balls['position'][:, 1], balls['size'], color=balls['color'])plt.xticks([])plt.yticks([])# 实现动画def update(number): # 更新界面, 让每个点不断变大 balls['size'] += balls['growth'] sc.set_sizes(balls['size']) index = number % n balls['size'][index] = \ np.random.uniform(40, 70, 1) balls['position'][index] = \ np.random.uniform(0, 1, (1, 2)) # 更新界面 sc.set_sizes(balls['size']) sc.set_offsets(balls['position'])# 每隔三十毫秒，执行一次update函数anim = ma.FuncAnimation( plt.gcf(), update, interval=30)plt.show()# 使用imagemagick 保存为gif# 提前 sudo apt-get install imagemagickanim.save('bubble_animation.gif', writer='imagemagick')]]></content>
+      <categories>
+        <category>programming/python/matplotlib</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>animation</tag>
+        <tag>FuncAnimation</tag>
+        <tag>imagemagick</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python内置函数getitem系列]]></title>
     <url>%2F2016%2F08%2F12%2Fpython%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0getitem%E7%B3%BB%E5%88%97%2F</url>
     <content type="text"><![CDATA[123456789101112131415class DictDemo: def __init__(self,key,value): self.dict = &#123;&#125; self.dict[key] = value def __getitem__(self,key): return self.dict[key] def __setitem__(self,key,value): self.dict[key] = value def __len__(self): return len(self.dict)dictDemo = DictDemo('key0','value0')print(dictDemo['key0']) #value0dictDemo['key1'] = 'value1'print(dictDemo['key1']) #value1print(len(dictDemo)) #2]]></content>
+      <categories>
+        <category>programming/python/内置函数</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>内置函数</tag>
+        <tag>getitem</tag>
+        <tag>setitem</tag>
+        <tag>len</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[from eval to getattr hasattr setattr]]></title>
     <url>%2F2016%2F08%2F12%2Ffrom%20eval%20to%20getattr%20hasattr%20setattr%2F</url>
-    <content type="text"><![CDATA[现实中的问题：我手中有一个列表[（’请求网页’,’网页1’）,（’解析网页’,’网页1’, (‘保存网页’, ‘网页1’),’请求网页’,’网页2’）,（’解析网页’,’网页2’, (‘保存网页’, ‘网页2’),… ]，想将列表中的事情从头到尾都干一遍。 首先，定义一个类 1234567class Spider: def request(self, page): print('请求网页:', page) def parse(self, page): print('解析网页:', page) def save(self, page): print('保存网页:', page) 然后我们想的是，如何复用Spider里的方法许多人的做法是直接使用eval做法如下 12345todo_lst = [('request', 'www.exobrain.online'), ('parse', 'www.exobrain.online'), ('save', 'www.exobrain.online'),('request', 'www.exobrain.online/categories/'), ('parse', 'www.exobrain.online/categories/'), ('save', 'www.exobrain.online/categories/'), ('方法测试1','www.exobrain.online/categories/')]spider = Spider()for item in todo_lst: string = 'spider.' + item[0]+'("'+item[1]+'")' eval(string) 出来了结果 123456789请求网页: www.exobrain.online解析网页: www.exobrain.online保存网页: www.exobrain.online请求网页: www.exobrain.online/categories/解析网页: www.exobrain.online/categories/保存网页: www.exobrain.online/categories/...AttributeError: &apos;Spider&apos; object has no attribute &apos;错误的方法测试1&apos;(报错：部分) 我们看到了报错，自然可以用try except处理。but，eval is evil, it’s not suggested. If you use eval, python is no longer elegant.So, we introduce the inbuit methods “getattr, hasattr, setattr“（参考自https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string不得不感慨国内外的差距，人家11years前解决的问题，我们到现在还有好多程序员处于问题之中，还在大量使用eval()。） 使用getattr代替eval, 将for部分注释掉重写如下 1234567891011todo_lst = [('request', 'www.exobrain.online'), ('parse', 'www.exobrain.online'), ('save', 'www.exobrain.online'),('request', 'www.exobrain.online/categories/'), ('parse', 'www.exobrain.online/categories/'), ('save', 'www.exobrain.online/categories/'), ('方法测试1','www.exobrain.online/categories/')]spider = Spider()# for item in todo_lst:# string = 'spider.' + item[0]+'("'+item[1]+'")'# eval(string)for item in todo_lst: if not hasattr(spider, item[0]): print('Spider类里不存在方法:', item[0]) continue getattr(spider, item[0])(item[1]) 我们看到了漂亮的结果，有没有发现上面的hasattr+getattr的代码比eval的代码更加优雅。I choose getattr instead of eval just because of elegance. 😃 1234567请求网页: www.exobrain.online解析网页: www.exobrain.online保存网页: www.exobrain.online请求网页: www.exobrain.online/categories/解析网页: www.exobrain.online/categories/保存网页: www.exobrain.online/categories/Spider类里不存在方法: 方法测试1 动态将函数添加到类或者对象里面 12345678910111213141516171819202122def method_added(page): print('调用method_added函数',page)# 将method_added 注册到spider对象里setattr(spider, 'method_added', method_added)# 测试method_added是否添加到spider对象里print(hasattr(spider, 'method_added'))# &gt;True 返回值为True, 添加成功getattr(spider, 'method_added')('www.exobrain.online')# &gt; 调用method_added函数 www.exobrain.onlinedef method_added2(self, page): print('调用method_added2函数',page)# 将method_added2 注册到Spider类里setattr(Spider, 'method_added2', method_added2)# 测试method_added是否添加到spider对象里print(hasattr(spider, 'method_added2'))# &gt;True 返回值为True, 添加成功getattr(spider, 'method_added2')('www.exobrain.online')# &gt; 调用method_added函数 www.exobrain.online 对于函数调用怎么办？我们可以使用locals 和 globals。locals() 和 globals() 是python的两个内置函数，通过它们可以一字典的方式访问局部和全局变量。 1234567891011121314151617def foo(): print "foo"def bar(): print "bar"func_list = ["foo","bar"]for func in func_list: locals()[func]()# &gt;foo# &gt;barfor func in func_list: globals()[func]()# &gt;foo# &gt;bar 参考：https://segmentfault.com/a/1190000010476065https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string]]></content>
+    <content type="text"><![CDATA[现实中的问题：我手中有一个列表[（’请求网页’,’网页1’）,（’解析网页’,’网页1’, (‘保存网页’, ‘网页1’),’请求网页’,’网页2’）,（’解析网页’,’网页2’, (‘保存网页’, ‘网页2’),… ]，想将列表中的事情从头到尾都干一遍。 首先，定义一个类 1234567class Spider: def request(self, page): print('请求网页:', page) def parse(self, page): print('解析网页:', page) def save(self, page): print('保存网页:', page) 然后我们想的是，如何复用Spider里的方法许多人的做法是直接使用eval做法如下 12345todo_lst = [('request', 'www.exobrain.online'), ('parse', 'www.exobrain.online'), ('save', 'www.exobrain.online'),('request', 'www.exobrain.online/categories/'), ('parse', 'www.exobrain.online/categories/'), ('save', 'www.exobrain.online/categories/'), ('方法测试1','www.exobrain.online/categories/')]spider = Spider()for item in todo_lst: string = 'spider.' + item[0]+'("'+item[1]+'")' eval(string) 出来了结果 123456789请求网页: www.exobrain.online解析网页: www.exobrain.online保存网页: www.exobrain.online请求网页: www.exobrain.online/categories/解析网页: www.exobrain.online/categories/保存网页: www.exobrain.online/categories/...AttributeError: &apos;Spider&apos; object has no attribute &apos;错误的方法测试1&apos;(报错：部分) 我们看到了报错，自然可以用try except处理。but，eval is evil, it’s not suggested. If you use eval, python is no longer elegant.So, we introduce the inbuit methods “getattr, hasattr, setattr“（参考自https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string不得不感慨国内外的差距，人家11years前解决的问题，我们到现在还有好多程序员处于问题之中，还在大量使用eval()。） 使用getattr代替eval, 将for部分注释掉重写如下 1234567891011todo_lst = [('request', 'www.exobrain.online'), ('parse', 'www.exobrain.online'), ('save', 'www.exobrain.online'),('request', 'www.exobrain.online/categories/'), ('parse', 'www.exobrain.online/categories/'), ('save', 'www.exobrain.online/categories/'), ('方法测试1','www.exobrain.online/categories/')]spider = Spider()# for item in todo_lst:# string = 'spider.' + item[0]+'("'+item[1]+'")'# eval(string)for item in todo_lst: if not hasattr(spider, item[0]): print('Spider类里不存在方法:', item[0]) continue getattr(spider, item[0])(item[1]) 我们看到了漂亮的结果，有没有发现上面的hasattr+getattr的代码比eval的代码更加优雅。I choose getattr instead of eval just because of elegance. 😃 1234567请求网页: www.exobrain.online解析网页: www.exobrain.online保存网页: www.exobrain.online请求网页: www.exobrain.online/categories/解析网页: www.exobrain.online/categories/保存网页: www.exobrain.online/categories/Spider类里不存在方法: 方法测试1 动态将函数添加到类或者对象里面 12345678910111213141516171819202122def method_added(page): print('调用method_added函数',page)# 将method_added 注册到spider对象里setattr(spider, 'method_added', method_added)# 测试method_added是否添加到spider对象里print(hasattr(spider, 'method_added'))# &gt;True 返回值为True, 添加成功getattr(spider, 'method_added')('www.exobrain.online')# &gt; 调用method_added函数 www.exobrain.onlinedef method_added2(self, page): print('调用method_added2函数',page)# 将method_added2 注册到Spider类里setattr(Spider, 'method_added2', method_added2)# 测试method_added是否添加到spider对象里print(hasattr(spider, 'method_added2'))# &gt;True 返回值为True, 添加成功getattr(spider, 'method_added2')('www.exobrain.online')# &gt; 调用method_added函数 www.exobrain.online 对于函数调用怎么办？我们可以使用locals 和 globals。locals() 和 globals() 是python的两个内置函数，通过它们可以一字典的方式访问局部和全局变量。 1234567891011121314151617def foo(): print "foo"def bar(): print "bar"func_list = ["foo","bar"]for func in func_list: locals()[func]()# &gt;foo# &gt;barfor func in func_list: globals()[func]()# &gt;foo# &gt;bar 参考：https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string]]></content>
       <categories>
-        <category>python/内置函数/getattr系列</category>
+        <category>programming/python/内置函数</category>
       </categories>
       <tags>
         <tag>python</tag>
@@ -246,7 +275,7 @@
   <entry>
     <title><![CDATA[Foundations of Modern Analysis(Friedman 1970)]]></title>
     <url>%2F2016%2F08%2F08%2FFoundations-of-Modern-Analysis-Friedman-1970%2F</url>
-    <content type="text"><![CDATA[download]]></content>
+    <content type="text"><![CDATA[台交大吴培元实分析泛函分析课程讲义下载download]]></content>
       <categories>
         <category>math/modern analysis</category>
       </categories>

@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[conda的包路径查找]]></title>
+    <url>%2F2019%2F08%2F12%2Fconda%E7%9A%84%E5%8C%85%E8%B7%AF%E5%BE%84%E6%9F%A5%E6%89%BE%2F</url>
+    <content type="text"><![CDATA[如果找不到display路径可以通过envs/环境变量/conda-meta/mpld3-0.3-py35_0.json文件找到安装路径找到”paths_data”从而找到{ “path”: “lib/python3.5/site-packages/mpld3/__pycache/_display.cpython-35.pyc”, “path_type”: “hardlink”, “sha256”: “3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27”, “sha256_in_prefix”: “3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27”, “size_in_bytes”: 16226 },]]></content>
+      <categories>
+        <category>programming/python/conda</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>conda</tag>
+        <tag>包路径</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mpld3._display.NumpyEncoder报错]]></title>
+    <url>%2F2019%2F08%2F12%2Fmpld3-display-NumpyEncoder%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[在使用mpld3.display.NumpyEncoder过程中报错 12345678910111213141516Traceback (most recent call last):File "ttt.py", line 55, in htmlfil.write(mpld3.fig_to_html(fig))File "/usr/local/lib/python2.7/dist-packages/mpld3/_display.py", line 251, in fig_to_htmlfigure_json=json.dumps(figure_json, cls=NumpyEncoder),File "/usr/lib/python2.7/json/init.py", line 250, in dumpssort_keys=sort_keys, **kw).encode(obj)File "/usr/lib/python2.7/json/encoder.py", line 207, in encodechunks = self.iterencode(o, _one_shot=True)File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencodereturn _iterencode(o, 0)File "/usr/local/lib/python2.7/dist-packages/mpld3/_display.py", line 138, in defaultreturn json.JSONEncoder.default(self, obj)File "/usr/lib/python2.7/json/encoder.py", line 184, in defaultraise TypeError(repr(o) + " is not JSON serializable")TypeError: array([ 1.]) is not JSON serializable 可以在mpld3._display()中修改NumpyEncoder类使用anaconda3用户的包在下面这个位置/Users/用户名/anaconda3/envs/虚拟环境名/lib/python3.5/site-packages/mpld3 12345678910111213class NumpyEncoder(json.JSONEncoder): """ Special json encoder for numpy types """ def default(self, obj): if isinstance(obj, (numpy.int_, numpy.intc, numpy.intp, numpy.int8, numpy.int16, numpy.int32, numpy.int64, numpy.uint8, numpy.uint16,numpy.uint32, numpy.uint64)): return int(obj) elif isinstance(obj, (numpy.float_, numpy.float16, numpy.float32, numpy.float64)): return float(obj) elif isinstance(obj,(numpy.ndarray,)): #### This is the fix return obj.tolist() return json.JSONEncoder.default(self, obj) 如果找不到_display路径可以通过envs/环境变量/conda-meta/mpld3-0.3-py35_0.json文件找到安装路径找到”paths_data”从而找到{&quot;_path&quot;: &quot;lib/python3.5/site-packages/mpld3/__pycache__/_display.cpython-35.pyc&quot;, &quot;path_type&quot;: &quot;hardlink&quot;, &quot;sha256&quot;: &quot;3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27&quot;, &quot;sha256_in_prefix&quot;: &quot;3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27&quot;, &quot;size_in_bytes&quot;: 16226 },]]></content>
+      <categories>
+        <category>programming/python/mpld3</category>
+      </categories>
+      <tags>
+        <tag>matplotlib</tag>
+        <tag>mpld3</tag>
+        <tag>_display</tag>
+        <tag>error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[协方差(相关性)、协整、回归系数]]></title>
+    <url>%2F2019%2F08%2F12%2F%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[线性回归、二元逻辑回归、多元逻辑回归的损失函数]]></title>
+    <url>%2F2019%2F08%2F12%2F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E3%80%81%E4%BA%8C%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E3%80%81%E5%A4%9A%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E7%9A%84%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>economics/econometrics</category>
+      </categories>
+      <tags>
+        <tag>linear regression</tag>
+        <tag>logit regression</tag>
+        <tag>multinomial logit regression</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo使用日常]]></title>
     <url>%2F2019%2F08%2F10%2Fhexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8%2F</url>
     <content type="text"></content>

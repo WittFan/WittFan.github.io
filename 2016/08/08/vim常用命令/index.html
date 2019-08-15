@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="一些常用的vim快捷键（命令模式下）选中后 “+y(+也是按键)   复制到系统剪切板viw  选中光标所在的单词gg 到文档顶部G  到文档底部n,md 删除从n到m行u 撤销到上一步v 进入到visual模式dd 删除当前行yy 复制当前行b光标跳转到上一个单词w光标跳转到下一个单词:/要搜索的词 + 回车  搜索i insert模式  ，任意模式模式下按esc进入到命令模式o 移动到光标下一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-08T07:25:42.453Z">
+<meta property="og:updated_time" content="2019-08-13T09:42:16.770Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim常用命令">
 <meta name="twitter:description" content="一些常用的vim快捷键（命令模式下）选中后 “+y(+也是按键)   复制到系统剪切板viw  选中光标所在的单词gg 到文档顶部G  到文档底部n,md 删除从n到m行u 撤销到上一步v 进入到visual模式dd 删除当前行yy 复制当前行b光标跳转到上一个单词w光标跳转到下一个单词:/要搜索的词 + 回车  搜索i insert模式  ，任意模式模式下按esc进入到命令模式o 移动到光标下一">
@@ -421,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  290字
+                  428字
                 </span>
               
 
@@ -449,7 +449,9 @@
         <h2 id="一些常用的vim快捷键（命令模式下）"><a href="#一些常用的vim快捷键（命令模式下）" class="headerlink" title="一些常用的vim快捷键（命令模式下）"></a>一些常用的vim快捷键（命令模式下）</h2><p>选中后 “+y(+也是按键)   复制到系统剪切板<br>viw  选中光标所在的单词<br>gg 到文档顶部<br>G  到文档底部<br>n,md 删除从n到m行<br>u 撤销到上一步<br>v 进入到visual模式<br>dd 删除当前行<br>yy 复制当前行<br>b光标跳转到上一个单词<br>w光标跳转到下一个单词<br>:/要搜索的词 + 回车  搜索<br>i insert模式  ，任意模式模式下按esc进入到命令模式<br>o 移动到光标下一行并新建一行<br>O 移动到光标上一行并新建一行<br>$ 移动光标到行尾 ^ 移动光标到行首</p>
 <p>缩进单行代码是两个大于号’&gt;&gt;’<br>回缩就是两个小于号’&lt;&lt;’<br>如果想要缩进很多行代码的话就按照下面做</p>
 <p>1 //在这里按下’v’进入选择模式<br>1<br>1<br>1<br>1<br>1<br>1//光标移动到这里，再按一次大于号’&gt;’缩进一次，按’6&gt;’缩进六次，按’&lt;’回缩。以下同理</p>
-<p>：%s/vivian/sky/g（等同于：g/vivian/s//sky/g）替换每一行中所有 vivian 为 sky</p>
+<h2 id="多行编辑"><a href="#多行编辑" class="headerlink" title="多行编辑"></a>多行编辑</h2><p>：%s/vivian/sky/g（等同于：g/vivian/s//sky/g）替换每一行中所有 vivian 为 sky</p>
+<p>将光标移到要插入相同内容的第一行第一个字符上，如上面代码中item 1中的i上<br>按下ctrl+v进入visual block模式<br>按两次j或者2j，将光标移动到要插入的最后一样，如上面代码中item 3中的i上<br>按下I（大写i）进入编辑模式<br>开始输入要插入的内容，如my_</p>
+<p>按esc退出（非常重要，不要忘记了），Vim会自动在这几行前面添加相同的内容，可能需要一些运行时间。</p>
 
       
     </div>
@@ -617,7 +619,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -628,7 +630,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -639,7 +641,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-count">57</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -713,7 +715,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些常用的vim快捷键（命令模式下）"><span class="nav-number">1.</span> <span class="nav-text">一些常用的vim快捷键（命令模式下）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些常用的vim快捷键（命令模式下）"><span class="nav-number">1.</span> <span class="nav-text">一些常用的vim快捷键（命令模式下）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行编辑"><span class="nav-number">2.</span> <span class="nav-text">多行编辑</span></a></li></ol></div>
             
 
           </div>
@@ -747,7 +749,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">9.8k</span>
+    <span title="Site words total count">11.4k</span>
   
 </div>
 

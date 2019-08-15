@@ -8,8 +8,110 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人拥有此生此世是不够的，他还需要一个诗意的世界。</description>
-    <pubDate>Mon, 12 Aug 2019 12:30:34 GMT</pubDate>
+    <pubDate>Thu, 15 Aug 2019 11:25:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>什么是钩子</title>
+      <link>https://www.exobrain.online/2019/08/15/%E4%BB%80%E4%B9%88%E6%98%AF%E9%92%A9%E5%AD%90/</link>
+      <guid>https://www.exobrain.online/2019/08/15/%E4%BB%80%E4%B9%88%E6%98%AF%E9%92%A9%E5%AD%90/</guid>
+      <pubDate>Thu, 15 Aug 2019 11:24:14 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt; 对于Windows系统，它是建立在事件驱动机制上的，说白了就是整个系统都是通过消息传递实现的。hook（钩子）是一种特殊的消息处理机制，它可以监视系统或者进程中的各种事件消息，截获发往目标窗口的消息并进行处理。所以说，我们可以在系统中自定义钩子，用来监视系统中特定事件的发
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p> 对于Windows系统，它是建立在事件驱动机制上的，说白了就是整个系统都是通过消息传递实现的。hook（钩子）是一种特殊的消息处理机制，它可以监视系统或者进程中的各种事件消息，截获发往目标窗口的消息并进行处理。所以说，我们可以在系统中自定义钩子，用来监视系统中特定事件的发生，完成特定功能，如屏幕取词，监视日志，截获键盘、鼠标输入等等。<br> 钩子的种类很多，每种钩子可以截获相应的消息，如键盘钩子可以截获键盘消息，外壳钩子可以截取、启动和关闭应用程序的消息等。钩子可以分为线程钩子和系统钩子，线程钩子可以监视指定线程的事件消息，系统钩子监视系统中的所有线程的事件消息。因为系统钩子会影响系统中所有的应用程序，所以钩子函数必须放在独立的动态链接库(DLL) 中。<br> 所以说，hook（钩子）就是一个Windows消息的拦截机制，可以拦截单个进程的消息(线程钩子)，也可以拦截所有进程的消息(系统钩子)，也可以对拦截的消息进行自定义的处理。Windows消息带了一些程序有用的信息，比如Mouse类信息，就带有鼠标所在窗体句柄、鼠标位置等信息，拦截了这些消息，就可以做出例如金山词霸一类的屏幕取词功能。</p>]]></content:encoded>
+      
+      <comments>https://www.exobrain.online/2019/08/15/%E4%BB%80%E4%B9%88%E6%98%AF%E9%92%A9%E5%AD%90/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>从测度论视角理解傅里叶变换和音频降噪</title>
+      <link>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%86%E8%A7%92%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%9F%B3%E9%A2%91%E9%99%8D%E5%99%AA/</link>
+      <guid>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%86%E8%A7%92%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%9F%B3%E9%A2%91%E9%99%8D%E5%99%AA/</guid>
+      <pubDate>Wed, 14 Aug 2019 03:45:08 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%86%E8%A7%92%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%9F%B3%E9%A2%91%E9%99%8D%E5%99%AA/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>从测度论角度理解傅里叶变换和降噪</title>
+      <link>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/</link>
+      <guid>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/</guid>
+      <pubDate>Wed, 14 Aug 2019 03:44:12 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>example iframe dash</title>
+      <link>https://www.exobrain.online/2019/08/14/example-iframe-dash/</link>
+      <guid>https://www.exobrain.online/2019/08/14/example-iframe-dash/</guid>
+      <pubDate>Wed, 14 Aug 2019 01:36:05 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;script&gt;
+//iframe 高度自适应
+function setIframeHeight(iframe) {
+    iframe.οnlοad=function(){
+        var iframeWin = iframe.contentWindow || ifr
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<script>//iframe 高度自适应function setIframeHeight(iframe) {    iframe.οnlοad=function(){        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;         var iframeHeight=iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;        iframe.height = iframeHeight+10;     }setIframeHeight(document.getElementById('sub_frame'));setIframeHeight(document.getElementById('sub_frame2'));</script><p><a href="http://127.0.0.1:8050/" target="_blank" rel="noopener">http://127.0.0.1:8050/</a></p><h2 id="example-iframe-dash"><a href="#example-iframe-dash" class="headerlink" title="example iframe dash"></a>example iframe dash</h2><iframe src="http://127.0.0.1:8050/" id="sub_frame"></iframe><iframe src="http://127.0.0.1:8050/" id="sub_frame2" width="1000" height="600"></iframe><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;http://127.0.0.1:8050/&quot; id=&quot;sub_frame&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>https://www.exobrain.online/2019/08/14/example-iframe-dash/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>量化交易dash框架</title>
+      <link>https://www.exobrain.online/2019/08/13/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6/</link>
+      <guid>https://www.exobrain.online/2019/08/13/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6/</guid>
+      <pubDate>Tue, 13 Aug 2019 04:17:43 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/13/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>python可视化 dash</title>
+      <link>https://www.exobrain.online/2019/08/13/python%E5%8F%AF%E8%A7%86%E5%8C%96-dash/</link>
+      <guid>https://www.exobrain.online/2019/08/13/python%E5%8F%AF%E8%A7%86%E5%8C%96-dash/</guid>
+      <pubDate>Tue, 13 Aug 2019 04:13:54 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/13/python%E5%8F%AF%E8%A7%86%E5%8C%96-dash/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>绘制布林带</title>
+      <link>https://www.exobrain.online/2019/08/13/%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6/</link>
+      <guid>https://www.exobrain.online/2019/08/13/%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6/</guid>
+      <pubDate>Tue, 13 Aug 2019 04:10:04 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/13/%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>conda的包路径查找</title>
@@ -60,112 +162,6 @@
       </description>
       
       <comments>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>线性回归、二元逻辑回归、多元逻辑回归的损失函数</title>
-      <link>https://www.exobrain.online/2019/08/12/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E3%80%81%E4%BA%8C%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E3%80%81%E5%A4%9A%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E7%9A%84%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/</link>
-      <guid>https://www.exobrain.online/2019/08/12/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E3%80%81%E4%BA%8C%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E3%80%81%E5%A4%9A%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E7%9A%84%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/</guid>
-      <pubDate>Mon, 12 Aug 2019 04:11:24 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/12/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E3%80%81%E4%BA%8C%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E3%80%81%E5%A4%9A%E5%85%83%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E7%9A%84%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>hexo使用日常</title>
-      <link>https://www.exobrain.online/2019/08/10/hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8/</link>
-      <guid>https://www.exobrain.online/2019/08/10/hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8/</guid>
-      <pubDate>Sat, 10 Aug 2019 07:54:07 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/10/hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>pandas read_table</title>
-      <link>https://www.exobrain.online/2019/08/09/pandas-read-table/</link>
-      <guid>https://www.exobrain.online/2019/08/09/pandas-read-table/</guid>
-      <pubDate>Fri, 09 Aug 2019 13:17:43 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;pandas.read_csv参数详解&lt;br&gt;pandas.read_csv参数整理&lt;/p&gt;
-&lt;p&gt;读取CSV（逗号分割）文件到DataFrame&lt;br&gt;也支持文件的部分导入和选择迭代&lt;br&gt;更多帮助参见：&lt;a href=&quot;http://pandas.pydata.org/
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>pandas.read_csv参数详解<br>pandas.read_csv参数整理</p><p>读取CSV（逗号分割）文件到DataFrame<br>也支持文件的部分导入和选择迭代<br>更多帮助参见：<a href="http://pandas.pydata.org/pandas-docs/stable/io.html" target="_blank" rel="noopener">http://pandas.pydata.org/pandas-docs/stable/io.html</a><br>参数：</p><p>filepath_or_buffer : str，pathlib。str, pathlib.Path, py._path.local.LocalPath or any object with a read() method (such as a file handle or StringIO)<br>可以是URL，可用URL类型包括：http, ftp, s3和文件。对于多文件正在准备中<br>本地文件读取实例：://localhost/path/to/table.csv</p><p>sep : str, default ‘,’<br>指定分隔符。如果不指定参数，则会尝试使用逗号分隔。分隔符长于一个字符并且不是‘\s+’,将使用python的语法分析器。并且忽略数据中的逗号。正则表达式例子：’\r\t’</p><p>delimiter : str, default None<br>定界符，备选分隔符（如果指定该参数，则sep参数失效）</p><p>delim_whitespace : boolean, default False.<br>指定空格(例如’ ‘或者’ ‘)是否作为分隔符使用，等效于设定sep=’\s+’。如果这个参数设定为Ture那么delimiter 参数失效。<br>在新版本0.18.1支持</p><p>header : int or list of ints, default ‘infer’<br>指定行数用来作为列名，数据开始行数。如果文件中没有列名，则默认为0，否则设置为None。如果明确设定header=0 就会替换掉原来存在列名。header参数可以是一个list例如：[0,1,3]，这个list表示将文件中的这些行作为列标题（意味着每一列有多个标题），介于中间的行将被忽略掉（例如本例中的2；本例中的数据1,2,4行将被作为多级标题出现，第3行数据将被丢弃，dataframe的数据从第5行开始。）。<br>注意：如果skip_blank_lines=True 那么header参数忽略注释行和空行，所以header=0表示第一行数据而不是文件的第一行。</p><p>names : array-like, default None<br>用于结果的列名列表，如果数据文件中没有列标题行，就需要执行header=None。默认列表中不能出现重复，除非设定参数mangle_dupe_cols=True。</p><p>index_col : int or sequence or False, default None<br>用作行索引的列编号或者列名，如果给定一个序列则有多个行索引。<br>如果文件不规则，行尾有分隔符，则可以设定index_col=False 来是的pandas不适用第一列作为行索引。</p><p>usecols : array-like, default None<br>返回一个数据子集，该列表中的值必须可以对应到文件中的位置（数字可以对应到指定的列）或者是字符传为文件中的列名。例如：usecols有效参数可能是 [0,1,2]或者是 [‘foo’, ‘bar’, ‘baz’]。使用这个参数可以加快加载速度并降低内存消耗。</p><p>as_recarray : boolean, default False<br>不赞成使用：该参数会在未来版本移除。请使用pd.read_csv(…).to_records()替代。<br>返回一个Numpy的recarray来替代DataFrame。如果该参数设定为True。将会优先squeeze参数使用。并且行索引将不再可用，索引列也将被忽略。</p><p>squeeze : boolean, default False<br>如果文件值包含一列，则返回一个Series</p><p>prefix : str, default None<br>在没有列标题时，给列添加前缀。例如：添加‘X’ 成为 X0, X1, …</p><p>mangle_dupe_cols : boolean, default True<br>重复的列，将‘X’…’X’表示为‘X.0’…’X.N’。如果设定为false则会将所有重名列覆盖。</p><p>dtype : Type name or dict of column -&gt; type, default None<br>每列数据的数据类型。例如 {‘a’: np.float64, ‘b’: np.int32}</p><p>engine : {‘c’, ‘python’}, optional<br>Parser engine to use. The C engine is faster while the python engine is currently more feature-complete.<br>使用的分析引擎。可以选择C或者是python。C引擎快但是Python引擎功能更加完备。</p><p>converters : dict, default None<br>列转换函数的字典。key可以是列名或者列的序号。</p><p>true_values : list, default None<br>Values to consider as True</p><p>false_values : list, default None<br>Values to consider as False</p><p>skipinitialspace : boolean, default False<br>忽略分隔符后的空白（默认为False，即不忽略）.</p><p>skiprows : list-like or integer, default None<br>需要忽略的行数（从文件开始处算起），或需要跳过的行号列表（从0开始）。</p><p>skipfooter : int, default 0<br>从文件尾部开始忽略。 (c引擎不支持)</p><p>skip_footer : int, default 0<br>不推荐使用：建议使用skipfooter ，功能一样。</p><p>nrows : int, default None<br>需要读取的行数（从文件头开始算起）。</p><p>na_values : scalar, str, list-like, or dict, default None<br>一组用于替换NA/NaN的值。如果传参，需要制定特定列的空值。默认为‘1.#IND’, ‘1.#QNAN’, ‘N/A’, ‘NA’, ‘NULL’, ‘NaN’, ‘nan’`.</p><p>keep_default_na : bool, default True<br>如果指定na_values参数，并且keep_default_na=False，那么默认的NaN将被覆盖，否则添加。</p><p>na_filter : boolean, default True<br>是否检查丢失值（空字符串或者是空值）。对于大文件来说数据集中没有空值，设定na_filter=False可以提升读取速度。</p><p>verbose : boolean, default False<br>是否打印各种解析器的输出信息，例如：“非数值列中缺失值的数量”等。</p><p>skip_blank_lines : boolean, default True<br>如果为True，则跳过空行；否则记为NaN。</p><p>parse_dates : boolean or list of ints or names or list of lists or dict, default False<br>boolean. True -&gt; 解析索引<br>list of ints or names. e.g. If [1, 2, 3] -&gt; 解析1,2,3列的值作为独立的日期列；<br>list of lists. e.g. If [[1, 3]] -&gt; 合并1,3列作为一个日期列使用<br>dict, e.g. {‘foo’ : [1, 3]} -&gt; 将1,3列合并，并给合并后的列起名为”foo”</p><p>infer_datetime_format : boolean, default False<br>如果设定为True并且parse_dates 可用，那么pandas将尝试转换为日期类型，如果可以转换，转换方法并解析。在某些情况下会快5~10倍。</p><p>keep_date_col : boolean, default False<br>如果连接多列解析日期，则保持参与连接的列。默认为False。</p><p>date_parser : function, default None<br>用于解析日期的函数，默认使用dateutil.parser.parser来做转换。Pandas尝试使用三种不同的方式解析，如果遇到问题则使用下一种方式。<br>1.使用一个或者多个arrays（由parse_dates指定）作为参数；<br>2.连接指定多列字符串作为一个列作为参数；<br>3.每行调用一次date_parser函数来解析一个或者多个字符串（由parse_dates指定）作为参数。</p><p>dayfirst : boolean, default False<br>DD/MM格式的日期类型</p><p>iterator : boolean, default False<br>返回一个TextFileReader 对象，以便逐块处理文件。</p><p>chunksize : int, default None<br>文件块的大小， See IO Tools docs for more informationon iterator and chunksize.</p><p>compression : {‘infer’, ‘gzip’, ‘bz2’, ‘zip’, ‘xz’, None}, default ‘infer’<br>直接使用磁盘上的压缩文件。如果使用infer参数，则使用 gzip, bz2, zip或者解压文件名中以‘.gz’, ‘.bz2’, ‘.zip’, or ‘xz’这些为后缀的文件，否则不解压。如果使用zip，那么ZIP包中国必须只包含一个文件。设置为None则不解压。<br>新版本0.18.1版本支持zip和xz解压</p><p>thousands : str, default None<br>千分位分割符，如“，”或者“.”</p><p>decimal : str, default ‘.’<br>字符中的小数点 (例如：欧洲数据使用’，‘).</p><p>float_precision : string, default None<br>Specifies which converter the C engine should use for floating-point values. The options are None for the ordinary converter, high for the high-precision converter, and round_trip for the round-trip converter.<br>指定</p><p>lineterminator : str (length 1), default None<br>行分割符，只在C解析器下使用。</p><p>quotechar : str (length 1), optional<br>引号，用作标识开始和解释的字符，引号内的分割符将被忽略。</p><p>quoting : int or csv.QUOTE_* instance, default 0<br>控制csv中的引号常量。可选 QUOTE_MINIMAL (0), QUOTE_ALL (1), QUOTE_NONNUMERIC (2) or QUOTE_NONE (3)</p><p>doublequote : boolean, default True<br>双引号，当单引号已经被定义，并且quoting 参数不是QUOTE_NONE的时候，使用双引号表示引号内的元素作为一个元素使用。</p><p>escapechar : str (length 1), default None<br>当quoting 为QUOTE_NONE时，指定一个字符使的不受分隔符限值。</p><p>comment : str, default None<br>标识着多余的行不被解析。如果该字符出现在行首，这一行将被全部忽略。这个参数只能是一个字符，空行（就像skip_blank_lines=True）注释行被header和skiprows忽略一样。例如如果指定comment=’#’ 解析‘#empty\na,b,c\n1,2,3’ 以header=0 那么返回结果将是以’a,b,c’作为header。</p><p>encoding : str, default None<br>指定字符集类型，通常指定为’utf-8’. List of Python standard encodings</p><p>dialect : str or csv.Dialect instance, default None<br>如果没有指定特定的语言，如果sep大于一个字符则忽略。具体查看csv.Dialect 文档</p><p>tupleize_cols : boolean, default False<br>Leave a list of tuples on columns as is (default is to convert to a Multi Index on the columns)</p><p>error_bad_lines : boolean, default True<br>如果一行包含太多的列，那么默认不会返回DataFrame ，如果设置成false，那么会将改行剔除（只能在C解析器下使用）。</p><p>warn_bad_lines : boolean, default True<br>如果error_bad_lines =False，并且warn_bad_lines =True 那么所有的“bad lines”将会被输出（只能在C解析器下使用）。</p><p>low_memory : boolean, default True<br>分块加载到内存，再低内存消耗中解析。但是可能出现类型混淆。确保类型不被混淆需要设置为False。或者使用dtype 参数指定类型。注意使用chunksize 或者iterator 参数分块读入会将整个文件读入到一个Dataframe，而忽略类型（只能在C解析器中有效）</p><p>buffer_lines : int, default None<br>不推荐使用，这个参数将会在未来版本移除，因为他的值在解析器中不推荐使用</p><p>compact_ints : boolean, default False<br>不推荐使用，这个参数将会在未来版本移除<br>如果设置compact_ints=True ，那么任何有整数类型构成的列将被按照最小的整数类型存储，是否有符号将取决于use_unsigned 参数</p><p>use_unsigned : boolean, default False<br>不推荐使用：这个参数将会在未来版本移除<br>如果整数列被压缩(i.e. compact_ints=True)，指定被压缩的列是有符号还是无符号的。<br>memory_map : boolean, default False<br>如果使用的文件在内存内，那么直接map文件使用。使用这种方式可以避免文件再次进行IO操作。<br><a href="https://blog.csdn.net/u012131430/article/details/78299582" target="_blank" rel="noopener">https://blog.csdn.net/u012131430/article/details/78299582</a></p>]]></content:encoded>
-      
-      <comments>https://www.exobrain.online/2019/08/09/pandas-read-table/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>商品期货协整配对</title>
-      <link>https://www.exobrain.online/2019/08/09/%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E5%8D%8F%E6%95%B4%E9%85%8D%E5%AF%B9/</link>
-      <guid>https://www.exobrain.online/2019/08/09/%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E5%8D%8F%E6%95%B4%E9%85%8D%E5%AF%B9/</guid>
-      <pubDate>Fri, 09 Aug 2019 05:59:16 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uqer.io/v3/community/share/57b52ac0228e5b79aa759416&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://uqer.io/v3/community/share/5
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p><a href="https://uqer.io/v3/community/share/57b52ac0228e5b79aa759416" target="_blank" rel="noopener">https://uqer.io/v3/community/share/57b52ac0228e5b79aa759416</a></p>]]></content:encoded>
-      
-      <comments>https://www.exobrain.online/2019/08/09/%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E5%8D%8F%E6%95%B4%E9%85%8D%E5%AF%B9/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>平稳性检验</title>
-      <link>https://www.exobrain.online/2019/08/09/%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C/</link>
-      <guid>https://www.exobrain.online/2019/08/09/%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C/</guid>
-      <pubDate>Fri, 09 Aug 2019 05:26:00 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/09/%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>python模块: deque</title>
-      <link>https://www.exobrain.online/2019/08/09/python%E6%A8%A1%E5%9D%97-deque/</link>
-      <guid>https://www.exobrain.online/2019/08/09/python%E6%A8%A1%E5%9D%97-deque/</guid>
-      <pubDate>Fri, 09 Aug 2019 01:34:57 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/09/python%E6%A8%A1%E5%9D%97-deque/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>为markdown创建一个新标记符</title>
-      <link>https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/</link>
-      <guid>https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/</guid>
-      <pubDate>Sun, 04 Aug 2019 09:18:42 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h2 id=&quot;问题的由来&quot;&gt;&lt;a href=&quot;#问题的由来&quot; class=&quot;headerlink&quot; title=&quot;问题的由来&quot;&gt;&lt;/a&gt;问题的由来&lt;/h2&gt;&lt;p&gt;当我们在编写markdown文件的时候会经常从网页上ctr+c其他人的文字，而我们标注作者和文章的来源不是特别方便，
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h2 id="问题的由来"><a href="#问题的由来" class="headerlink" title="问题的由来"></a>问题的由来</h2><p>当我们在编写markdown文件的时候会经常从网页上ctr+c其他人的文字，而我们标注作者和文章的来源不是特别方便，这会导致许多时候我们不去标注作者和文章的来源。引文规范对于问题追溯和文明发展相当重要，与其道德说教来让大家遵守引文规范，不如提供更方便的方式来让大家遵守，因此，本文抛砖引玉出一种新的高效的规范和工具。</p><h2 id="复制时天生携带引文信息"><a href="#复制时天生携带引文信息" class="headerlink" title="复制时天生携带引文信息"></a>复制时天生携带引文信息</h2><p>将下面的javascript语句放到网页的head处</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">"copy"</span>, copy);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">oEvent</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> selection = <span class="built_in">window</span>.getSelection();</span><br><span class="line">        <span class="keyword">var</span> quoteMagic = <span class="string">"&lt;!-- It's convenient in markdown file. --&gt;\n"</span>;</span><br><span class="line">        quoteMagic += <span class="string">"&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"</span>;</span><br><span class="line">        quoteMagic += <span class="string">"&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "</span>;</span><br><span class="line">        quoteMagic += <span class="built_in">document</span>.location.href;</span><br><span class="line">        quoteMagic += <span class="string">"&#125; --&gt;\n"</span>;</span><br><span class="line">        <span class="keyword">var</span> copytext = quoteMagic + selection + <span class="string">"\n&lt;!-- quote(end) --&gt;"</span>;</span><br><span class="line">        oEvent.preventDefault();</span><br><span class="line">        oEvent.clipboardData.setData(<span class="string">"text"</span>, copytext);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><p>示例如下</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.addEventListener(<span class="string">"copy"</span>, copy);</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">oEvent</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> selection = <span class="built_in">window</span>.getSelection();</span></span><br><span class="line"><span class="xml">        var quoteMagic = "<span class="comment">&lt;!-- It's convenient in markdown file. --&gt;</span>\n";</span></span><br><span class="line"><span class="xml">        quoteMagic += "<span class="comment">&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;</span>\n";</span></span><br><span class="line"><span class="javascript">        quoteMagic += <span class="string">"&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "</span>;</span></span><br><span class="line"><span class="javascript">        quoteMagic += <span class="built_in">document</span>.location.href;</span></span><br><span class="line"><span class="javascript">        quoteMagic += <span class="string">"&#125; --&gt;\n"</span>;</span></span><br><span class="line"><span class="xml">        var copytext = quoteMagic + selection + "\n<span class="comment">&lt;!-- quote(end) --&gt;</span>";</span></span><br><span class="line">        oEvent.preventDefault();</span><br><span class="line"><span class="javascript">        oEvent.clipboardData.setData(<span class="string">"text"</span>, copytext);</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">测试1<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">测试2</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>当我们运行网页，复制网页中内容后，将其粘贴到mardown文件，会得到下面的结果</p><p><img src="/2019/08/04/为markdown创建一个引文标记符/1.png" alt="1"><br>而其（在vscode+MarkDownPreview中）渲染成html的显示效果如下图<br><img src="/2019/08/04/为markdown创建一个引文标记符/2.png" alt="1"><br>这样我们就可以在不影响显示的情况下保留其引文信息。当然，html中保留引文信息的工作需要在markdown文件转换为html文件的过程中完成，转换工具和规范这里不做讨论，先留下个坑，或者其他人来完成吧，😃。</p><h2 id="hexo的next主题下复制时附加引文信息"><a href="#hexo的next主题下复制时附加引文信息" class="headerlink" title="hexo的next主题下复制时附加引文信息"></a>hexo的next主题下复制时附加引文信息</h2><p>找到hexo项目根目录，我的根目录是/blog<br>在 ../blog/themes/next/layout/_partials/head目录下找到custom-head.swig文件，将下面的代码添加到文末就可以了。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">"copy"</span>, copy);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">oEvent</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> selection = <span class="built_in">window</span>.getSelection();</span><br><span class="line">        <span class="keyword">var</span> quoteMagic = <span class="string">"&lt;!-- It's convenient in markdown file. --&gt;\n"</span>;</span><br><span class="line">        quoteMagic += <span class="string">"&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"</span>;</span><br><span class="line">        quoteMagic += <span class="string">"&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "</span>;</span><br><span class="line">        quoteMagic += <span class="built_in">document</span>.location.href;</span><br><span class="line">        quoteMagic += <span class="string">"&#125; --&gt;\n"</span>;</span><br><span class="line">        <span class="keyword">var</span> copytext = quoteMagic + selection + <span class="string">"\n&lt;!-- quote(end) --&gt;"</span>;</span><br><span class="line">        oEvent.preventDefault();</span><br><span class="line">        oEvent.clipboardData.setData(<span class="string">"text"</span>, copytext);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><h2 id="将hexo-next下的文末出处去掉"><a href="#将hexo-next下的文末出处去掉" class="headerlink" title="将hexo-next下的文末出处去掉"></a>将hexo-next下的文末出处去掉</h2><p>将文件../blog/themes/next/_config.yml（blog为我的hexo根目录）中的post_copyright项下的enable的值从true改为false</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Declare license on posts</span></span><br><span class="line"><span class="attr">post_copyright:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  license:</span> <span class="string">CC</span> <span class="string">BY-NC-SA</span> <span class="number">3.0</span></span><br><span class="line"><span class="attr">  license_url:</span> <span class="attr">https://creativecommons.org/licenses/by-nc-sa/3.0/</span></span><br></pre></td></tr></table></figure><p>改完后为</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Declare license on posts</span></span><br><span class="line"><span class="attr">post_copyright:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  license:</span> <span class="string">CC</span> <span class="string">BY-NC-SA</span> <span class="number">3.0</span></span><br><span class="line"><span class="attr">  license_url:</span> <span class="attr">https://creativecommons.org/licenses/by-nc-sa/3.0/</span></span><br></pre></td></tr></table></figure><p>之后文章末尾就不会再出现下图的情形了<br><img src="/2019/08/04/为markdown创建一个引文标记符/3.png" alt="1"></p><h2 id="如果使用了代码复制功能怎么改"><a href="#如果使用了代码复制功能怎么改" class="headerlink" title="如果使用了代码复制功能怎么改"></a>如果使用了代码复制功能怎么改</h2><p>当使用代码复制功能的时候，我们希望复制到干净的代码，却不想得到引用信息;而在复制文章内容的时候，我们希望得到引文信息。</p><p>笔者使用的是这个链接下实现的代码复制功能，<br><a href="https://yfzhou.coding.me/2018/08/27/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E5%88%B6%E5%8A%9F%E8%83%BD%EF%BC%89/" target="_blank" rel="noopener">https://yfzhou.coding.me/2018/08/27/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E5%88%B6%E5%8A%9F%E8%83%BD%EF%BC%89/</a></p><p>我的办法是：<br>将clipboard-use.js文件的代码进行了一下升级，加了if语句。<br>可以理解成将custom-head.swig文件里的那个添加引用的代码整合到了clipboard-use.js文件里。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">/*页面载入完成后，创建复制按钮*/</span></span><br><span class="line"><span class="keyword">var</span> btnCopyEmpty = <span class="literal">true</span>;</span><br><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"copy"</span>, copy);</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">oEvent</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> selection = <span class="built_in">window</span>.getSelection();</span><br><span class="line">    <span class="keyword">if</span>(btnCopyEmpty)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(btnCopyEmpty)</span><br><span class="line">        <span class="keyword">var</span> quoteMagic = <span class="string">"&lt;!-- It's convenient in markdown file. --&gt;\n"</span>;</span><br><span class="line">        quoteMagic += <span class="string">"&lt;!-- More information: https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#more --&gt;\n"</span>;</span><br><span class="line">        quoteMagic += <span class="string">"&lt;!-- quote(start)&#123; author: authorname, site: www.sitename.com, location: "</span>;</span><br><span class="line">        quoteMagic += <span class="built_in">document</span>.location.href;</span><br><span class="line">        quoteMagic += <span class="string">"&#125; --&gt;\n"</span>;</span><br><span class="line">        <span class="keyword">var</span> copytext = quoteMagic + selection + <span class="string">"\n&lt;!-- quote(end) --&gt;"</span>;    </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> copytext = selection;   </span><br><span class="line">    &#125;</span><br><span class="line">    oEvent.preventDefault();</span><br><span class="line">    oEvent.clipboardData.setData(<span class="string">"text"</span>, copytext);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">!<span class="function"><span class="keyword">function</span> (<span class="params">e, t, a</span>) </span>&#123; </span><br><span class="line"><span class="comment">/* code */</span></span><br><span class="line"><span class="keyword">var</span> initCopyCode = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> copyHtml = <span class="string">''</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'</span>;</span><br><span class="line">    <span class="comment">//fa fa-globe可以去字体库替换自己想要的图标</span></span><br><span class="line">copyHtml += <span class="string">'  &lt;i class="fa fa-clipboard"&gt;&lt;/i&gt;&lt;span&gt;copy&lt;/span&gt;'</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;/button&gt;'</span>;</span><br><span class="line">    $(<span class="string">".highlight .code pre"</span>).before(copyHtml);</span><br><span class="line">    <span class="keyword">new</span> ClipboardJS(<span class="string">'.btn-copy'</span>, &#123;</span><br><span class="line">        target: <span class="function"><span class="keyword">function</span>(<span class="params">trigger</span>) </span>&#123;</span><br><span class="line">            btnCopyEmpty = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">return</span> trigger.nextElementSibling;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">// clipboard.on('success', function(e)&#123;</span></span><br><span class="line">    <span class="comment">//     btnCopyEmpty = false;</span></span><br><span class="line">    <span class="comment">// &#125;);</span></span><br><span class="line">&#125;</span><br><span class="line">initCopyCode();</span><br><span class="line">&#125;(<span class="built_in">window</span>, <span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      <comments>https://www.exobrain.online/2019/08/04/%E4%B8%BAmarkdown%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BC%95%E6%96%87%E6%A0%87%E8%AE%B0%E7%AC%A6/#disqus_thread</comments>
     </item>
     
   </channel>

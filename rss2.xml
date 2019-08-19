@@ -8,8 +8,47 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人拥有此生此世是不够的，他还需要一个诗意的世界。</description>
-    <pubDate>Thu, 15 Aug 2019 11:25:02 GMT</pubDate>
+    <pubDate>Sat, 17 Aug 2019 11:49:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>行为经济学的八大原理</title>
+      <link>https://www.exobrain.online/2019/08/17/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86/</link>
+      <guid>https://www.exobrain.online/2019/08/17/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86/</guid>
+      <pubDate>Sat, 17 Aug 2019 11:47:09 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/2019/08/17/行为经济学的八大原理/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86.png&quot; alt&gt;&lt;/p&gt;
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="/2019/08/17/行为经济学的八大原理/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86.png" alt></p>]]></content:encoded>
+      
+      <comments>https://www.exobrain.online/2019/08/17/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>无约束优化问题的数值算法</title>
+      <link>https://www.exobrain.online/2019/08/17/%E6%97%A0%E7%BA%A6%E6%9D%9F%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9A%84%E6%95%B0%E5%80%BC%E7%AE%97%E6%B3%95/</link>
+      <guid>https://www.exobrain.online/2019/08/17/%E6%97%A0%E7%BA%A6%E6%9D%9F%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9A%84%E6%95%B0%E5%80%BC%E7%AE%97%E6%B3%95/</guid>
+      <pubDate>Sat, 17 Aug 2019 11:16:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;无约束优化问题的数值算法&lt;br&gt;最速下降法&lt;br&gt;Newton法&lt;br&gt;共轭梯度法&lt;br&gt;变尺度法&lt;br&gt;直接法&lt;br&gt;    坐标轮换法&lt;br&gt;    步长加速法&lt;br&gt;    方向加速法&lt;/p&gt;
+
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>无约束优化问题的数值算法<br>最速下降法<br>Newton法<br>共轭梯度法<br>变尺度法<br>直接法<br>    坐标轮换法<br>    步长加速法<br>    方向加速法</p>]]></content:encoded>
+      
+      <comments>https://www.exobrain.online/2019/08/17/%E6%97%A0%E7%BA%A6%E6%9D%9F%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9A%84%E6%95%B0%E5%80%BC%E7%AE%97%E6%B3%95/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>什么是钩子</title>
@@ -52,29 +91,6 @@
       </description>
       
       <comments>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>example iframe dash</title>
-      <link>https://www.exobrain.online/2019/08/14/example-iframe-dash/</link>
-      <guid>https://www.exobrain.online/2019/08/14/example-iframe-dash/</guid>
-      <pubDate>Wed, 14 Aug 2019 01:36:05 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;script&gt;
-//iframe 高度自适应
-function setIframeHeight(iframe) {
-    iframe.οnlοad=function(){
-        var iframeWin = iframe.contentWindow || ifr
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<script>//iframe 高度自适应function setIframeHeight(iframe) {    iframe.οnlοad=function(){        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;         var iframeHeight=iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;        iframe.height = iframeHeight+10;     }setIframeHeight(document.getElementById('sub_frame'));setIframeHeight(document.getElementById('sub_frame2'));</script><p><a href="http://127.0.0.1:8050/" target="_blank" rel="noopener">http://127.0.0.1:8050/</a></p><h2 id="example-iframe-dash"><a href="#example-iframe-dash" class="headerlink" title="example iframe dash"></a>example iframe dash</h2><iframe src="http://127.0.0.1:8050/" id="sub_frame"></iframe><iframe src="http://127.0.0.1:8050/" id="sub_frame2" width="1000" height="600"></iframe><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;http://127.0.0.1:8050/&quot; id=&quot;sub_frame&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      <comments>https://www.exobrain.online/2019/08/14/example-iframe-dash/#disqus_thread</comments>
     </item>
     
     <item>
@@ -150,18 +166,6 @@ function setIframeHeight(iframe) {
       <content:encoded><![CDATA[<p>在使用mpld3.display.NumpyEncoder过程中报错</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">File <span class="string">"ttt.py"</span>, line <span class="number">55</span>, <span class="keyword">in</span> </span><br><span class="line">htmlfil.write(mpld3.fig_to_html(fig))</span><br><span class="line">File <span class="string">"/usr/local/lib/python2.7/dist-packages/mpld3/_display.py"</span>, line <span class="number">251</span>, <span class="keyword">in</span> fig_to_html</span><br><span class="line">figure_json=json.dumps(figure_json, cls=NumpyEncoder),</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/init.py"</span>, line <span class="number">250</span>, <span class="keyword">in</span> dumps</span><br><span class="line">sort_keys=sort_keys, **kw).encode(obj)</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/encoder.py"</span>, line <span class="number">207</span>, <span class="keyword">in</span> encode</span><br><span class="line">chunks = self.iterencode(o, _one_shot=<span class="literal">True</span>)</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/encoder.py"</span>, line <span class="number">270</span>, <span class="keyword">in</span> iterencode</span><br><span class="line"><span class="keyword">return</span> _iterencode(o, <span class="number">0</span>)</span><br><span class="line">File <span class="string">"/usr/local/lib/python2.7/dist-packages/mpld3/_display.py"</span>, line <span class="number">138</span>, <span class="keyword">in</span> default</span><br><span class="line"><span class="keyword">return</span> json.JSONEncoder.default(self, obj)</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/encoder.py"</span>, line <span class="number">184</span>, <span class="keyword">in</span> default</span><br><span class="line"><span class="keyword">raise</span> TypeError(repr(o) + <span class="string">" is not JSON serializable"</span>)</span><br><span class="line">TypeError: array([ <span class="number">1.</span>]) <span class="keyword">is</span> <span class="keyword">not</span> JSON serializable</span><br></pre></td></tr></table></figure><p>可以在mpld3._display()中修改NumpyEncoder类<br>使用anaconda3用户的包在下面这个位置<br>/Users/用户名/anaconda3/envs/虚拟环境名/lib/python3.5/site-packages/mpld3</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NumpyEncoder</span><span class="params">(json.JSONEncoder)</span>:</span></span><br><span class="line">    <span class="string">""" Special json encoder for numpy types """</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">default</span><span class="params">(self, obj)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> isinstance(obj, (numpy.int_, numpy.intc, numpy.intp, numpy.int8,</span><br><span class="line">            numpy.int16, numpy.int32, numpy.int64, numpy.uint8,</span><br><span class="line">            numpy.uint16,numpy.uint32, numpy.uint64)):</span><br><span class="line">            <span class="keyword">return</span> int(obj)</span><br><span class="line">        <span class="keyword">elif</span> isinstance(obj, (numpy.float_, numpy.float16, numpy.float32, </span><br><span class="line">            numpy.float64)):</span><br><span class="line">            <span class="keyword">return</span> float(obj)</span><br><span class="line">        <span class="keyword">elif</span> isinstance(obj,(numpy.ndarray,)): <span class="comment">#### This is the fix</span></span><br><span class="line">            <span class="keyword">return</span> obj.tolist()</span><br><span class="line">        <span class="keyword">return</span> json.JSONEncoder.default(self, obj)</span><br></pre></td></tr></table></figure><ol start="2"><li>如果找不到_display路径<br>可以通过envs/环境变量/conda-meta/mpld3-0.3-py35_0.json文件找到安装路径找到”paths_data”<br>从而找到<br>{<pre><code>&quot;_path&quot;: &quot;lib/python3.5/site-packages/mpld3/__pycache__/_display.cpython-35.pyc&quot;,&quot;path_type&quot;: &quot;hardlink&quot;,&quot;sha256&quot;: &quot;3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27&quot;,&quot;sha256_in_prefix&quot;: &quot;3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27&quot;,&quot;size_in_bytes&quot;: 16226</code></pre>   },</li></ol>]]></content:encoded>
       
       <comments>https://www.exobrain.online/2019/08/12/mpld3-display-NumpyEncoder%E6%8A%A5%E9%94%99/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>协方差(相关性)、协整、回归系数</title>
-      <link>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/</link>
-      <guid>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/</guid>
-      <pubDate>Mon, 12 Aug 2019 06:23:56 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/#disqus_thread</comments>
     </item>
     
   </channel>

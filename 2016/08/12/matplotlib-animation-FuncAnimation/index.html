@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445import numpy as npimport matplotlib.pyplot as pltimport matplotlib.animation as ma# 初始化构建所有样本n = 100balls = np.zeros(n,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/08/12/matplotlib-animation-FuncAnimation/bubble_animation.gif">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/12/matplotlib-animation-FuncAnimation/08/12/matplotlib-animation-FuncAnimation/bubble_animation.gif">
 <meta property="og:updated_time" content="2019-08-10T09:54:48.645Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.animation.FuncAnimation">
 <meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445import numpy as npimport matplotlib.pyplot as pltimport matplotlib.animation as ma# 初始化构建所有样本n = 100balls = np.zeros(n,">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/08/12/matplotlib-animation-FuncAnimation/bubble_animation.gif">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/12/matplotlib-animation-FuncAnimation/08/12/matplotlib-animation-FuncAnimation/bubble_animation.gif">
 
 
 
@@ -267,6 +267,16 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-platly-dash-example">
+          <a href="http://www.django-plotly-dash-auth.exobrain.online" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            platly-dash-example
           </a>
         </li>
       
@@ -450,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib.animation <span class="keyword">as</span> ma</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化构建所有样本</span></span><br><span class="line">n = <span class="number">100</span></span><br><span class="line">balls = np.zeros(n, dtype=[</span><br><span class="line">    (<span class="string">'position'</span>, float, <span class="number">2</span>),</span><br><span class="line">    (<span class="string">'size'</span>, float, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">'growth'</span>, float, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">'color'</span>, float, <span class="number">4</span>)])</span><br><span class="line">balls[<span class="string">'position'</span>] = np.random.uniform(<span class="number">0</span>, <span class="number">1</span>, (n, <span class="number">2</span>))</span><br><span class="line">balls[<span class="string">'size'</span>] = np.random.uniform(<span class="number">40</span>, <span class="number">50</span>, n)</span><br><span class="line">balls[<span class="string">'growth'</span>] = np.random.uniform(<span class="number">10</span>, <span class="number">20</span>, n)</span><br><span class="line">balls[<span class="string">'color'</span>] = np.random.uniform(<span class="number">0</span>, <span class="number">1</span>, (n, <span class="number">4</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制图像</span></span><br><span class="line">plt.figure(<span class="string">'Bubble'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Bubble'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">sc = plt.scatter(balls[<span class="string">'position'</span>][:, <span class="number">0</span>], balls[<span class="string">'position'</span>][:, <span class="number">1</span>], balls[<span class="string">'size'</span>], color=balls[<span class="string">'color'</span>])</span><br><span class="line">plt.xticks([])</span><br><span class="line">plt.yticks([])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 实现动画</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update</span><span class="params">(number)</span>:</span></span><br><span class="line">    <span class="comment"># 更新界面, 让每个点不断变大</span></span><br><span class="line">    balls[<span class="string">'size'</span>] += balls[<span class="string">'growth'</span>]</span><br><span class="line">    sc.set_sizes(balls[<span class="string">'size'</span>])</span><br><span class="line">    index = number % n</span><br><span class="line">    balls[<span class="string">'size'</span>][index] = \</span><br><span class="line">        np.random.uniform(<span class="number">40</span>, <span class="number">70</span>, <span class="number">1</span>)</span><br><span class="line">    balls[<span class="string">'position'</span>][index] = \</span><br><span class="line">        np.random.uniform(<span class="number">0</span>, <span class="number">1</span>, (<span class="number">1</span>, <span class="number">2</span>))</span><br><span class="line">    <span class="comment"># 更新界面</span></span><br><span class="line">    sc.set_sizes(balls[<span class="string">'size'</span>])</span><br><span class="line">    sc.set_offsets(balls[<span class="string">'position'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 每隔三十毫秒，执行一次update函数</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用imagemagick 保存为gif</span></span><br><span class="line"><span class="comment"># 提前 sudo apt-get install imagemagick</span></span><br><span class="line">anim = ma.FuncAnimation(</span><br><span class="line">    plt.gcf(), update, interval=<span class="number">30</span>, save_count=<span class="number">50</span>)</span><br><span class="line">anim.save(<span class="string">'bubble_animation.gif'</span>,fps=<span class="number">500</span>, writer=<span class="string">'imagemagick'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/08/12/matplotlib-animation-FuncAnimation/bubble_animation.gif" alt="animation.FuncAnimation"></p>
+<p><img src="/2016/08/12/matplotlib-animation-FuncAnimation/08/12/matplotlib-animation-FuncAnimation/bubble_animation.gif" alt="animation.FuncAnimation"></p>
 
       
     </div>
@@ -613,7 +623,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">67</span>
+                  <span class="site-state-item-count">69</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -624,7 +634,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -635,7 +645,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">110</span>
+                  <span class="site-state-item-count">112</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -727,7 +737,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">20.8k</span>
+    <span title="Site words total count">20.4k</span>
   
 </div>
 

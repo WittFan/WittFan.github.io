@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&quot;&quot;&quot;    demo12_loadtxt.py aapl.csv文件读取&quot;&quot;&quot;import numpy as npimport datetime as dtimport matplotlib.pyplot a">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/08/12/matplotlib-pyplot-dates/Apple_stock_prices_with_dates.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/12/matplotlib-pyplot-dates/08/12/matplotlib-pyplot-dates/Apple_stock_prices_with_dates.png">
 <meta property="og:updated_time" content="2019-08-10T10:52:13.715Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.pyplot:dates">
 <meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&quot;&quot;&quot;    demo12_loadtxt.py aapl.csv文件读取&quot;&quot;&quot;import numpy as npimport datetime as dtimport matplotlib.pyplot a">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/08/12/matplotlib-pyplot-dates/Apple_stock_prices_with_dates.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/12/matplotlib-pyplot-dates/08/12/matplotlib-pyplot-dates/Apple_stock_prices_with_dates.png">
 
 
 
@@ -267,6 +267,16 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-platly-dash-example">
+          <a href="http://www.django-plotly-dash-auth.exobrain.online" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            platly-dash-example
           </a>
         </li>
       
@@ -450,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo12_loadtxt.py aapl.csv文件读取</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> datetime <span class="keyword">as</span> dt</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib.dates <span class="keyword">as</span> md</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dmy2ymd</span><span class="params">(dmy)</span>:</span></span><br><span class="line">    dmy = str(dmy, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">    time = dt.datetime.strptime(dmy, <span class="string">'%d-%m-%Y'</span>).date()</span><br><span class="line">    t = time.strftime(<span class="string">'%Y-%m-%d'</span>)</span><br><span class="line">    <span class="keyword">return</span> t</span><br><span class="line"></span><br><span class="line"><span class="comment"># dtype中的dates为M8[D], &lt;class 'numpy.ndarray'&gt;</span></span><br><span class="line">dates, opening_prices, highest_prices,\</span><br><span class="line">    lowest_prices, closing_prices = np.loadtxt(</span><br><span class="line">    <span class="string">'../data/aapl.csv'</span>, delimiter=<span class="string">','</span>,</span><br><span class="line">    usecols=(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>), unpack=<span class="literal">True</span>,</span><br><span class="line">    dtype=<span class="string">'M8[D], f8, f8, f8, f8'</span>,</span><br><span class="line">    converters=&#123;<span class="number">1</span>: dmy2ymd&#125; <span class="comment"># 转换器函数</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制收盘价折线图</span></span><br><span class="line">plt.figure(<span class="string">'AAPL K'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'AAPL K'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Day'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Price'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">plt.tick_params(labelsize=<span class="number">10</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为了日期显示合理，修改dates的dtype</span></span><br><span class="line">dates = dates.astype(md.datetime.datetime)</span><br><span class="line"><span class="comment"># 设置x轴刻度定位器</span></span><br><span class="line">ax = plt.gca()</span><br><span class="line"><span class="comment">#设置主刻度定位器为周定位器（每周一显示主刻度文本）</span></span><br><span class="line">ax.xaxis.set_major_locator(md.WeekdayLocator(byweekday=md.MO))</span><br><span class="line">ax.xaxis.set_major_formatter(md.DateFormatter(<span class="string">'%d %b %Y'</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">#设置次刻度定位器为日定位器</span></span><br><span class="line">ax.xaxis.set_minor_locator(md.DayLocator())</span><br><span class="line">plt.tick_params(labelsize=<span class="number">8</span>)</span><br><span class="line"></span><br><span class="line">plt.plot(dates, closing_prices,</span><br><span class="line">         color=<span class="string">'dodgerblue'</span>, linewidth=<span class="number">2</span>,</span><br><span class="line">         linestyle=<span class="string">'--'</span>, label=<span class="string">'AAPL CP'</span>)</span><br><span class="line"></span><br><span class="line">plt.legend()</span><br><span class="line">plt.gcf().autofmt_xdate()</span><br><span class="line">plt.savefig(<span class="string">'Apple_stock_prices_with_dates.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/08/12/matplotlib-pyplot-dates/Apple_stock_prices_with_dates.png" alt="Apple_stock_prices_with_dates.png"></p>
+<p><img src="/2016/08/12/matplotlib-pyplot-dates/08/12/matplotlib-pyplot-dates/Apple_stock_prices_with_dates.png" alt="Apple_stock_prices_with_dates.png"></p>
 
       
     </div>
@@ -613,7 +623,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">67</span>
+                  <span class="site-state-item-count">69</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -624,7 +634,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -635,7 +645,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">110</span>
+                  <span class="site-state-item-count">112</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -727,7 +737,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">20.8k</span>
+    <span title="Site words total count">20.4k</span>
   
 </div>
 

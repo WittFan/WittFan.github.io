@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435&quot;&quot;&quot;    demo sklearn.linear_model&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltimport sklearn.linear_model as lmx, y = np.loadtxt(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/09/30/sklearn-linear-model/09/30/sklearn-linear-model/sklearn-linear-regression.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/09/30/sklearn-linear-model/sklearn-linear-regression.png">
 <meta property="og:updated_time" content="2019-08-19T12:22:58.015Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sklearn.linear_model">
 <meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435&quot;&quot;&quot;    demo sklearn.linear_model&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltimport sklearn.linear_model as lmx, y = np.loadtxt(">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/09/30/sklearn-linear-model/09/30/sklearn-linear-model/sklearn-linear-regression.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/09/30/sklearn-linear-model/sklearn-linear-regression.png">
 
 
 
@@ -221,6 +221,16 @@
     <ul id="menu" class="menu">
       
         
+        <li class="menu-item menu-item-platly-dash-example">
+          <a href="http://www.django-plotly-dash-auth.exobrain.online" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            platly-dash-example
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
@@ -267,16 +277,6 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-platly-dash-example">
-          <a href="http://www.django-plotly-dash-auth.exobrain.online" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
-            
-            platly-dash-example
           </a>
         </li>
       
@@ -460,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo sklearn.linear_model</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> sklearn.linear_model <span class="keyword">as</span> lm</span><br><span class="line"></span><br><span class="line">x, y = np.loadtxt(</span><br><span class="line">    <span class="string">'../ml_data/single.txt'</span>, delimiter=<span class="string">','</span>,</span><br><span class="line">    usecols=(<span class="number">0</span>, <span class="number">1</span>), unpack=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># 选择、创建模型</span></span><br><span class="line">model = lm.LinearRegression()</span><br><span class="line">x = x.reshape(<span class="number">-1</span>, <span class="number">1</span>) <span class="comment"># 把x改为n行1列的2维数组</span></span><br><span class="line">model.fit(x, y)</span><br><span class="line">pred_y = model.predict(x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 评估模型误差</span></span><br><span class="line"><span class="keyword">import</span> sklearn.metrics <span class="keyword">as</span> sm</span><br><span class="line">print(sm.mean_absolute_error(pred_y, y))</span><br><span class="line">print(sm.mean_squared_error(pred_y, y))</span><br><span class="line">print(sm.median_absolute_error(pred_y, y))</span><br><span class="line">print(sm.r2_score(pred_y, y))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 画图</span></span><br><span class="line">plt.figure(<span class="string">'Linear Regression'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Linear Regression'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.xlabel(<span class="string">'x'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'y'</span>)</span><br><span class="line">plt.tick_params(labelsize=<span class="number">10</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">plt.scatter(x, y, color=<span class="string">'dodgerblue'</span>, label=<span class="string">'Samples'</span>, s=<span class="number">70</span>, marker=<span class="string">'o'</span>)</span><br><span class="line">plt.plot(x, pred_y, c=<span class="string">'orangered'</span>, label=<span class="string">'Regression'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.savefig(<span class="string">'sklearn-linear-regression.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/09/30/sklearn-linear-model/09/30/sklearn-linear-model/sklearn-linear-regression.png" alt></p>
+<p><img src="/2016/09/30/sklearn-linear-model/sklearn-linear-regression.png" alt></p>
 
       
     </div>

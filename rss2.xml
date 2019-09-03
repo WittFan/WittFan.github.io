@@ -8,8 +8,41 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人拥有此生此世是不够的，他还需要一个诗意的世界。</description>
-    <pubDate>Tue, 20 Aug 2019 01:43:51 GMT</pubDate>
+    <pubDate>Mon, 26 Aug 2019 10:53:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>sklearn.covariance</title>
+      <link>https://www.exobrain.online/2019/08/26/sklearn-covariance/</link>
+      <guid>https://www.exobrain.online/2019/08/26/sklearn-covariance/</guid>
+      <pubDate>Mon, 26 Aug 2019 10:53:03 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/26/sklearn-covariance/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>如何让一本书囊括金融工程</title>
+      <link>https://www.exobrain.online/2019/08/26/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E6%9C%AC%E4%B9%A6%E5%9B%8A%E6%8B%AC%E9%87%91%E8%9E%8D%E5%B7%A5%E7%A8%8B/</link>
+      <guid>https://www.exobrain.online/2019/08/26/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E6%9C%AC%E4%B9%A6%E5%9B%8A%E6%8B%AC%E9%87%91%E8%9E%8D%E5%B7%A5%E7%A8%8B/</guid>
+      <pubDate>Mon, 26 Aug 2019 08:15:58 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;实变函数论（实分析）&lt;br&gt;泛函分析&lt;br&gt;凸分析&lt;br&gt;随机过程&lt;br&gt;微分方程&lt;br&gt;统计学&lt;br&gt;动态资产定价&lt;br&gt;博弈论&lt;br&gt;智能优化算法&lt;br&gt;计量经济学&lt;br&gt;机器学习&lt;br&gt;python&lt;/p&gt;
+&lt;p&gt;套利模型&lt;/p&gt;
+
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>实变函数论（实分析）<br>泛函分析<br>凸分析<br>随机过程<br>微分方程<br>统计学<br>动态资产定价<br>博弈论<br>智能优化算法<br>计量经济学<br>机器学习<br>python</p><p>套利模型</p>]]></content:encoded>
+      
+      <comments>https://www.exobrain.online/2019/08/26/%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E6%9C%AC%E4%B9%A6%E5%9B%8A%E6%8B%AC%E9%87%91%E8%9E%8D%E5%B7%A5%E7%A8%8B/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>正向激励和非均衡数据集、损失函数加权重</title>
@@ -32,12 +65,12 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;/2019/08/17/行为经济学的八大原理/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86.png&quot; alt&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;img src=&quot;/2019/08/17/行为经济学的八大原理/08/17/行为经济学的八大原理/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90
         
       
       </description>
       
-      <content:encoded><![CDATA[<p><img src="/2019/08/17/行为经济学的八大原理/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86.png" alt></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/2019/08/17/行为经济学的八大原理/08/17/行为经济学的八大原理/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86.png" alt></p>]]></content:encoded>
       
       <comments>https://www.exobrain.online/2019/08/17/%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86/#disqus_thread</comments>
     </item>
@@ -94,54 +127,6 @@
     </item>
     
     <item>
-      <title>从测度论角度理解傅里叶变换和降噪</title>
-      <link>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/</link>
-      <guid>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/</guid>
-      <pubDate>Wed, 14 Aug 2019 03:44:12 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/14/%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>量化交易dash框架</title>
-      <link>https://www.exobrain.online/2019/08/13/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6/</link>
-      <guid>https://www.exobrain.online/2019/08/13/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6/</guid>
-      <pubDate>Tue, 13 Aug 2019 04:17:43 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/13/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>python可视化 dash</title>
-      <link>https://www.exobrain.online/2019/08/13/python%E5%8F%AF%E8%A7%86%E5%8C%96-dash/</link>
-      <guid>https://www.exobrain.online/2019/08/13/python%E5%8F%AF%E8%A7%86%E5%8C%96-dash/</guid>
-      <pubDate>Tue, 13 Aug 2019 04:13:54 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/13/python%E5%8F%AF%E8%A7%86%E5%8C%96-dash/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>绘制布林带</title>
-      <link>https://www.exobrain.online/2019/08/13/%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6/</link>
-      <guid>https://www.exobrain.online/2019/08/13/%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6/</guid>
-      <pubDate>Tue, 13 Aug 2019 04:10:04 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/13/%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>conda的包路径查找</title>
       <link>https://www.exobrain.online/2019/08/12/conda%E7%9A%84%E5%8C%85%E8%B7%AF%E5%BE%84%E6%9F%A5%E6%89%BE/</link>
       <guid>https://www.exobrain.online/2019/08/12/conda%E7%9A%84%E5%8C%85%E8%B7%AF%E5%BE%84%E6%9F%A5%E6%89%BE/</guid>
@@ -158,6 +143,38 @@
       <content:encoded><![CDATA[<p>如果找不到<em>display路径<br>可以通过envs/环境变量/conda-meta/mpld3-0.3-py35_0.json文件找到安装路径找到”paths_data”<br>从而找到<br>{<br>    “<em>path”: “lib/python3.5/site-packages/mpld3/__pycache</em></em>/_display.cpython-35.pyc”,<br>    “path_type”: “hardlink”,<br>    “sha256”: “3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27”,<br>    “sha256_in_prefix”: “3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27”,<br>    “size_in_bytes”: 16226<br>      },</p>]]></content:encoded>
       
       <comments>https://www.exobrain.online/2019/08/12/conda%E7%9A%84%E5%8C%85%E8%B7%AF%E5%BE%84%E6%9F%A5%E6%89%BE/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>mpld3._display.NumpyEncoder报错</title>
+      <link>https://www.exobrain.online/2019/08/12/mpld3-display-NumpyEncoder%E6%8A%A5%E9%94%99/</link>
+      <guid>https://www.exobrain.online/2019/08/12/mpld3-display-NumpyEncoder%E6%8A%A5%E9%94%99/</guid>
+      <pubDate>Mon, 12 Aug 2019 12:16:18 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;在使用mpld3.display.NumpyEncoder过程中报错&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>在使用mpld3.display.NumpyEncoder过程中报错</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">File <span class="string">"ttt.py"</span>, line <span class="number">55</span>, <span class="keyword">in</span> </span><br><span class="line">htmlfil.write(mpld3.fig_to_html(fig))</span><br><span class="line">File <span class="string">"/usr/local/lib/python2.7/dist-packages/mpld3/_display.py"</span>, line <span class="number">251</span>, <span class="keyword">in</span> fig_to_html</span><br><span class="line">figure_json=json.dumps(figure_json, cls=NumpyEncoder),</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/init.py"</span>, line <span class="number">250</span>, <span class="keyword">in</span> dumps</span><br><span class="line">sort_keys=sort_keys, **kw).encode(obj)</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/encoder.py"</span>, line <span class="number">207</span>, <span class="keyword">in</span> encode</span><br><span class="line">chunks = self.iterencode(o, _one_shot=<span class="literal">True</span>)</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/encoder.py"</span>, line <span class="number">270</span>, <span class="keyword">in</span> iterencode</span><br><span class="line"><span class="keyword">return</span> _iterencode(o, <span class="number">0</span>)</span><br><span class="line">File <span class="string">"/usr/local/lib/python2.7/dist-packages/mpld3/_display.py"</span>, line <span class="number">138</span>, <span class="keyword">in</span> default</span><br><span class="line"><span class="keyword">return</span> json.JSONEncoder.default(self, obj)</span><br><span class="line">File <span class="string">"/usr/lib/python2.7/json/encoder.py"</span>, line <span class="number">184</span>, <span class="keyword">in</span> default</span><br><span class="line"><span class="keyword">raise</span> TypeError(repr(o) + <span class="string">" is not JSON serializable"</span>)</span><br><span class="line">TypeError: array([ <span class="number">1.</span>]) <span class="keyword">is</span> <span class="keyword">not</span> JSON serializable</span><br></pre></td></tr></table></figure><p>可以在mpld3._display()中修改NumpyEncoder类<br>使用anaconda3用户的包在下面这个位置<br>/Users/用户名/anaconda3/envs/虚拟环境名/lib/python3.5/site-packages/mpld3</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NumpyEncoder</span><span class="params">(json.JSONEncoder)</span>:</span></span><br><span class="line">    <span class="string">""" Special json encoder for numpy types """</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">default</span><span class="params">(self, obj)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> isinstance(obj, (numpy.int_, numpy.intc, numpy.intp, numpy.int8,</span><br><span class="line">            numpy.int16, numpy.int32, numpy.int64, numpy.uint8,</span><br><span class="line">            numpy.uint16,numpy.uint32, numpy.uint64)):</span><br><span class="line">            <span class="keyword">return</span> int(obj)</span><br><span class="line">        <span class="keyword">elif</span> isinstance(obj, (numpy.float_, numpy.float16, numpy.float32, </span><br><span class="line">            numpy.float64)):</span><br><span class="line">            <span class="keyword">return</span> float(obj)</span><br><span class="line">        <span class="keyword">elif</span> isinstance(obj,(numpy.ndarray,)): <span class="comment">#### This is the fix</span></span><br><span class="line">            <span class="keyword">return</span> obj.tolist()</span><br><span class="line">        <span class="keyword">return</span> json.JSONEncoder.default(self, obj)</span><br></pre></td></tr></table></figure><ol start="2"><li>如果找不到_display路径<br>可以通过envs/环境变量/conda-meta/mpld3-0.3-py35_0.json文件找到安装路径找到”paths_data”<br>从而找到<br>{<pre><code>&quot;_path&quot;: &quot;lib/python3.5/site-packages/mpld3/__pycache__/_display.cpython-35.pyc&quot;,&quot;path_type&quot;: &quot;hardlink&quot;,&quot;sha256&quot;: &quot;3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27&quot;,&quot;sha256_in_prefix&quot;: &quot;3cd28fc146c93bbb8e211212d4308494e210ccb56ece4976bc60bfef00cc1a27&quot;,&quot;size_in_bytes&quot;: 16226</code></pre>   },</li></ol>]]></content:encoded>
+      
+      <comments>https://www.exobrain.online/2019/08/12/mpld3-display-NumpyEncoder%E6%8A%A5%E9%94%99/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>协方差(相关性)、协整、回归系数</title>
+      <link>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/</link>
+      <guid>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/</guid>
+      <pubDate>Mon, 12 Aug 2019 06:23:56 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/12/%E5%8D%8F%E6%96%B9%E5%B7%AE-%E7%9B%B8%E5%85%B3%E6%80%A7-%E3%80%81%E5%8D%8F%E6%95%B4%E3%80%81%E5%9B%9E%E5%BD%92%E7%B3%BB%E6%95%B0/#disqus_thread</comments>
     </item>
     
   </channel>

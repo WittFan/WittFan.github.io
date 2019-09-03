@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="polynominal regression 只在x样本的大小范围内有效。 1234567891011121314151617181920212223242526272829303132333435363738394041424344&quot;&quot;&quot;    demo sklearn.pipeline&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltimp">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/10/11/sklearn-pipeline/polynominal.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/10/11/sklearn-pipeline/10/11/sklearn-pipeline/polynominal.png">
 <meta property="og:updated_time" content="2019-08-19T12:56:21.333Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sklearn.pipeline">
 <meta name="twitter:description" content="polynominal regression 只在x样本的大小范围内有效。 1234567891011121314151617181920212223242526272829303132333435363738394041424344&quot;&quot;&quot;    demo sklearn.pipeline&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltimp">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/10/11/sklearn-pipeline/polynominal.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/10/11/sklearn-pipeline/10/11/sklearn-pipeline/polynominal.png">
 
 
 
@@ -461,7 +461,7 @@
         <p>polynominal regression 只在x样本的大小范围内有效。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo sklearn.pipeline</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> sklearn.linear_model <span class="keyword">as</span> lm</span><br><span class="line"><span class="keyword">import</span> sklearn.preprocessing <span class="keyword">as</span> sp</span><br><span class="line"><span class="keyword">import</span> sklearn.metrics <span class="keyword">as</span> sm</span><br><span class="line"><span class="keyword">import</span> sklearn.pipeline <span class="keyword">as</span> pl</span><br><span class="line"></span><br><span class="line"><span class="comment"># 采集数据</span></span><br><span class="line">x, y = np.loadtxt(</span><br><span class="line">    <span class="string">'../ml_data/single.txt'</span>, delimiter=<span class="string">','</span>,</span><br><span class="line">    usecols=(<span class="number">0</span>, <span class="number">1</span>), unpack=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 训练多项式回归模型</span></span><br><span class="line">x = x.reshape(<span class="number">-1</span>, <span class="number">1</span>)</span><br><span class="line">model = pl.make_pipeline(</span><br><span class="line">    sp.PolynomialFeatures(<span class="number">8</span>),</span><br><span class="line">    lm.LinearRegression())</span><br><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model.fit(x, y)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 预测输出</span></span><br><span class="line">pred_y = model.predict(x)</span><br><span class="line">print(sm.r2_score(y, pred_y))</span><br><span class="line">print(sm.r2_score(pred_y, y))</span><br><span class="line"><span class="comment"># 绘制多项式曲线</span></span><br><span class="line">px = np.linspace(x.min(), x.max(), <span class="number">1000</span>)</span><br><span class="line">pred_y = model.predict(px.reshape(<span class="number">-1</span>, <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 画图</span></span><br><span class="line">plt.figure(<span class="string">'Poly Regression'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Poly Regression'</span>, fontsize=<span class="number">16</span>)</span><br><span class="line">plt.xlabel(<span class="string">'X'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Y'</span>)</span><br><span class="line">plt.tick_params(labelsize=<span class="number">10</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">plt.scatter(x, y, color=<span class="string">'dodgerblue'</span>, label=<span class="string">'Samples'</span>, s=<span class="number">70</span>, marker=<span class="string">'o'</span>)</span><br><span class="line">plt.plot(px, pred_y, color=<span class="string">'orangered'</span>, label=<span class="string">'Poly Line'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.savefig(<span class="string">'polynominal.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/10/11/sklearn-pipeline/polynominal.png" alt></p>
+<p><img src="/2016/10/11/sklearn-pipeline/10/11/sklearn-pipeline/polynominal.png" alt></p>
 
       
     </div>
@@ -624,7 +624,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">69</span>
+                  <span class="site-state-item-count">72</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -635,7 +635,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -646,7 +646,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">112</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -738,7 +738,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">20.4k</span>
+    <span title="Site words total count">21.7k</span>
   
 </div>
 

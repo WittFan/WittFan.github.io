@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="123456789101112131415161718192021222324252627282930&quot;&quot;&quot;    demo06_3dscatter.py 3D图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltfrom mpl_toolkits.mplot3d import axes3dn = 300x = np.random.normal(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-3dscatter/3d-scatter.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-3dscatter/08/11/matplotlib-pyplot-3dscatter/3d-scatter.png">
 <meta property="og:updated_time" content="2019-08-09T11:25:09.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.pyplot.3dscatter">
 <meta name="twitter:description" content="123456789101112131415161718192021222324252627282930&quot;&quot;&quot;    demo06_3dscatter.py 3D图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltfrom mpl_toolkits.mplot3d import axes3dn = 300x = np.random.normal(">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-3dscatter/3d-scatter.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-3dscatter/08/11/matplotlib-pyplot-3dscatter/3d-scatter.png">
 
 
 
@@ -460,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo06_3dscatter.py 3D图</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> mpl_toolkits.mplot3d <span class="keyword">import</span> axes3d</span><br><span class="line"></span><br><span class="line">n = <span class="number">300</span></span><br><span class="line">x = np.random.normal(<span class="number">0</span>, <span class="number">1</span>, n)</span><br><span class="line">y = np.random.normal(<span class="number">0</span>, <span class="number">1</span>, n)</span><br><span class="line">z = np.random.normal(<span class="number">0</span>, <span class="number">1</span>, n)</span><br><span class="line"><span class="comment"># 绘制三维散点图</span></span><br><span class="line">plt.figure(<span class="string">'3D Scatter'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">ax3d = plt.gca(projection=<span class="string">'3d'</span>) <span class="comment"># 创建三维坐标系</span></span><br><span class="line">plt.title(<span class="string">'3D Scatter'</span>, fontsize=<span class="number">20</span>)</span><br><span class="line">ax3d.set_xlabel(<span class="string">'x'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">ax3d.set_ylabel(<span class="string">'y'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">ax3d.set_zlabel(<span class="string">'z'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">plt.xticks([<span class="number">-3</span>, <span class="number">-2</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">plt.yticks([<span class="number">-3</span>, <span class="number">-2</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">plt.tick_params(labelsize=<span class="number">9</span>)</span><br><span class="line">d = np.sqrt(x**<span class="number">2</span> + y**<span class="number">2</span> + z**<span class="number">2</span>)</span><br><span class="line">ax3d.scatter(x, y, z, marker=<span class="string">'o'</span>, s=<span class="number">70</span>, c=d,</span><br><span class="line">            alpha=<span class="number">.5</span>, cmap=<span class="string">'jet'</span>)</span><br><span class="line"><span class="comment"># make unused spines invisible to fix error of tight_layout</span></span><br><span class="line"><span class="keyword">for</span> spine <span class="keyword">in</span> ax3d.spines.values():</span><br><span class="line">    spine.set_visible(<span class="literal">False</span>)</span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.savefig(<span class="string">'3d-scatter.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/08/11/matplotlib-pyplot-3dscatter/3d-scatter.png" alt="3d scatter"></p>
+<p><img src="/2016/08/11/matplotlib-pyplot-3dscatter/08/11/matplotlib-pyplot-3dscatter/3d-scatter.png" alt="3d scatter"></p>
 
       
     </div>
@@ -621,7 +621,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">69</span>
+                  <span class="site-state-item-count">72</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -632,7 +632,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -643,7 +643,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">112</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -735,7 +735,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">20.4k</span>
+    <span title="Site words total count">21.7k</span>
   
 </div>
 

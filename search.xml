@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[sklearn.covariance]]></title>
+    <url>%2F2019%2F08%2F26%2Fsklearn-covariance%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[如何让一本书囊括金融工程]]></title>
+    <url>%2F2019%2F08%2F26%2F%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E6%9C%AC%E4%B9%A6%E5%9B%8A%E6%8B%AC%E9%87%91%E8%9E%8D%E5%B7%A5%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[实变函数论（实分析）泛函分析凸分析随机过程微分方程统计学动态资产定价博弈论智能优化算法计量经济学机器学习python 套利模型]]></content>
+      <categories>
+        <category>想法</category>
+      </categories>
+      <tags>
+        <tag>杂思妄想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[正向激励和非均衡数据集、损失函数加权重]]></title>
     <url>%2F2019%2F08%2F20%2F%E6%AD%A3%E5%90%91%E6%BF%80%E5%8A%B1%E5%92%8C%E9%9D%9E%E5%9D%87%E8%A1%A1%E6%95%B0%E6%8D%AE%E9%9B%86%E3%80%81%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%8A%A0%E6%9D%83%E9%87%8D%2F</url>
     <content type="text"></content>
@@ -39,26 +55,6 @@
   <entry>
     <title><![CDATA[从测度论视角理解傅里叶变换和音频降噪]]></title>
     <url>%2F2019%2F08%2F14%2F%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%86%E8%A7%92%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%9F%B3%E9%A2%91%E9%99%8D%E5%99%AA%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[从测度论角度理解傅里叶变换和降噪]]></title>
-    <url>%2F2019%2F08%2F14%2F%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%99%8D%E5%99%AA%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[量化交易dash框架]]></title>
-    <url>%2F2019%2F08%2F13%2F%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[python可视化 dash]]></title>
-    <url>%2F2019%2F08%2F13%2Fpython%E5%8F%AF%E8%A7%86%E5%8C%96-dash%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[绘制布林带]]></title>
-    <url>%2F2019%2F08%2F13%2F%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -216,6 +212,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[python可视化 dash]]></title>
+    <url>%2F2018%2F08%2F13%2Fpython%E5%8F%AF%E8%A7%86%E5%8C%96-dash%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[django-plotly-dash文件结构]]></title>
     <url>%2F2018%2F04%2F18%2Fdjango-plotly-dash%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%2F</url>
     <content type="text"><![CDATA[django-plotly-dash文件结构 ./demo/ demo/ urls.py &lt;路由配置文件&gt; templates/ &lt;模板文件&gt; example.html django_plotly_dash/ django_plotly_dash.egg-info/ docs/]]></content>
@@ -225,6 +226,28 @@
       <tags>
         <tag>django-plotly-dash</tag>
         <tag>dpd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[量化交易dash框架]]></title>
+    <url>%2F2017%2F08%2F13%2F%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[绘制布林带]]></title>
+    <url>%2F2017%2F08%2F13%2F%E7%BB%98%E5%88%B6%E5%B8%83%E6%9E%97%E5%B8%A6%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[计量模型、机器学习名词表]]></title>
+    <url>%2F2016%2F12%2F30%2F%E8%AE%A1%E9%87%8F%E6%A8%A1%E5%9E%8B%E3%80%81%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%90%8D%E8%AF%8D%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[总纲支持向量机、核函数、决策树、随机森林、GBTs解决过拟合问题 线性回归 逻辑回归AUCROC 梯度下降 特征处理 多重共线性 内生性 支持向量机不会考虑所有数据，而只是关心很难被超平面分割的‘异常点’。SVR(support vector regression) 核函数低维空间映射到高维空间，非线性问题转换为高维空间里的线性问题。 决策树白盒模型，通过生成决策规则来解决分类和回归问题。sklearn tree DecisionTreeClassifier gini entropy max_depth max_leaf_nodes best-first search min_samples_split min_samples_leaf min_impurity_split对于分类问题：只考虑叶子节点里哪个分类最大对于回归问题：叶子节点里的加权平均值决策树里的惩罚项 树的集成模型的联结解决变量边际效应恒定的隐含假设1）特征 分箱（卡方检验） 01型变量 逻辑回归2）特征 决策树 叶子节点 逻辑回归 （适用于广告行业和金融反欺诈）3）特征 GBTs 叶子节点 逻辑回归gradient-boosted trees(GBTs)模型评估 ROC 2）利用了决策树的优点能综合考虑多个变量，而且对变量的线性变换是稳定的。叶子节点是类别型变量 剪枝pruning决策树模型的过拟合问题：决策树属于非参模型（nonparametric model),有无穷多个参数，更容易过拟合。pre-pruning: max_depth min_sample_splitpost_pruning: 减掉不纯度下降不明显的 消除误差剪枝法 Reduced Error Pruning REPcross validation: train set, test set, pruning set训练集、验证集、测试集训练集、验证集、测试集、剪枝集bottom-up restriction 树的集成(哲学层面：联结主义，具体算法：集成方法)weak learner 平均方法 averaging methods随机森林假设决策树是相互独立的如果每颗决策树是一样的，那么随机森林等同于决策树模型 决策树的随机性1）随机选取训练决策树的数据2）随机选取候选自变量3）随机选取阈值集合sklearn:random forests 1) 2) RandomForestClassifier 分类问题 RandomForestRegressor 回归问题extremely randomized tresss 1) 2) 3) ExtraTreesClassifier ExtraTreesRegressor Random forest embedding(非监督学习)几乎所有的监督学习都可以作为非监督学习使用低维数据到高维数据：支持向量机的核函数、随机森林的random forest embedding 提升方法 boosting methodsGBTs(gradient boosted trees)梯度提升决策树损失函数MSE因为决策树本身并没有明确的模型参数，而无法使用梯度下降法把决策树本身抽象成整体模型的一个参数，并使用梯度下降的方法对其进行更新。GBTs模型超参数深度m为了防止过拟合，引入了学习速率这个超参数 vsklearn GradientBoostingRegressor GradientBoostingClassifier 生成式模型判别式模型（discriminative model）生成式模型 (generative model) 贝叶斯框架蒙题霍尔问题先验概率、后验概率先验概率知因求果，后验概率知果求因 贝叶斯学派与频率学派 Bayesian Frequentist频率学派：随机性真实存在，能被适合的模型所捕捉，模型的参数本身是确定的值，参数的估计值是一个随机变量。通过不断地调整模型的functional form来逼近真实模型。贝叶斯学派：参数不再是确定的值，而是随机数$ P(a,b,\sigma | y,x) \sim P(y|x,a,b, \sigma)P(a)P(b)P(\sigma)$Bayesian linear regression一种更加一般的线性回归模型，与普通的回归模型相比，此模型的参数估计值更加靠近0。当参数的先验分布为特定分布时，此模型就是之前讨论过的岭回归，该模型可以理解为在线性回归的基础上加上了惩罚项。根据参数的后验分布来得到估计值数据里的随机性更多的来自于参数本身的随机分布。贝叶斯学派认为参数的分布情况反映了观察者对事物的认识并不完全。（我：贝叶斯学派可以囊括频率学派）。观察者不断根据信息，来更新自己的知识，最终根据新的知识得到参数的估计值。 朴素贝叶斯特征提取，停止词stop words8]]></content>
+      <categories>
+        <category>programming/python/machine learning</category>
+      </categories>
+      <tags>
+        <tag>machine learning</tag>
+        <tag>名词表</tag>
       </tags>
   </entry>
   <entry>
@@ -351,6 +374,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[数据维度转换]]></title>
+    <url>%2F2016%2F09%2F01%2F%E6%95%B0%E6%8D%AE%E7%BB%B4%E5%BA%A6%E8%BD%AC%E6%8D%A2%2F</url>
+    <content type="text"><![CDATA[数据升维从低维到高维SVM的核函数 kernel method决策树random trees embedding 数据降维除去随机因素的干扰避免过拟合降低工程实现难度方法： 线性判别分析 主成分分析PCA]]></content>
+      <categories>
+        <category>programming/python/machine learning</category>
+      </categories>
+      <tags>
+        <tag>数据维度转换</tag>
+        <tag>machine learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[黄金分割法]]></title>
     <url>%2F2016%2F09%2F01%2F%E9%BB%84%E9%87%91%E5%88%86%E5%89%B2%E6%B3%95%2F</url>
     <content type="text"><![CDATA[黄金分割法(0.618法)适用于任何单峰值函数𝜙(𝑡)求极小点的问题，甚至对函数可以不要求连续。 单峰函数设𝜙 : [𝑎, 𝑏] ⊂ R → R，𝑡⋆是在[𝑎, 𝑏]上的全局极小点，如果对于[𝑎, 𝑏]上的任意两点𝑡1, 𝑡2，且𝑡1 &lt; 𝑡2都有𝜙(t1) &gt; 𝜙(t2), if t2 &lt; t*𝜙(t1) &lt; 𝜙(t2), if t1 &gt; t*那么称𝜙(𝑡)是区间[𝑎, 𝑏]上的单峰函数。若𝑡1 &lt; 𝑡⋆ &lt; 𝑡2，称[𝑡1, 𝑡2]为搜索区间。 算法步骤：步骤1 确定𝜙(𝑡)的初始搜索区间[𝑎, 𝑏]。步骤2 计算𝑡2 = 𝑎 + 𝛽(𝑏 − 𝑎)，𝜙2 = 𝜙(𝑡2)。步骤3 计算𝑡1 = 𝑎 + 𝛼(𝑏 − 𝑎)，𝜙1 = 𝜙(𝑡1)，。步骤4 若𝑡2-𝑡1≤ 𝜀，停机；否则，转步骤5。步骤5 若𝜙(𝑡1) ≤ 𝜙(𝑡2)，则𝑏 = 𝑡2, 𝑡2 = 𝑡1, 𝜙(𝑡2) = 𝜙(𝑡1), 𝑡1 = 𝑎 + 𝛼(𝑏 − 𝑎), 𝜙1 = 𝜙(𝑡1);否则，𝑎 = 𝑡1, 𝑡1 = 𝑡2, 𝜙(𝑡1) = 𝜙(𝑡2), 𝑡2 = 𝑎 + 𝛽(𝑏 − 𝑎), 𝜙2 = 𝜙(𝑡2).然后转步骤4。 123456789101112131415161718192021222324252627282930313233343536373839import mathfrom scipy.optimize import fmin,fminbound# one dimension golden searchdef f ( x ): L = math.exp(-x)+x**2 return Ldef golden(f ,*args): if not('a' in dir()): a=[] b=[] a.append(args[0]) b.append(args[1]) L=1e-16 # tolrence for convergence n=80 # max steps for iteration #a,b is the region containing opt point lambda1=a[0]+0.382*(b[0]-a[0]) miu1=a[0]+0.618*(b[0]-a[0]) #lambda1 miu1 is the test point of golden search method for k in range(0,n): if abs(b[k]-a[k])&lt;=L: solve=(a[k]+b[k])/2 break f_lambda1=f(lambda1) f_miu1=f(miu1) if f_lambda1&gt;f_miu1: a.append(lambda1) b.append(b[k]) lambda2=miu1 miu2=a[k+1]+0.618*(b[k+1]-a[k+1]) else: a.append(a[k]) b.append(miu1) miu2=lambda1 lambda2=a[k+1]+0.382*(b[k+1]-a[k+1]) lambda1=lambda2 miu1=miu2 print('optimum point is ：',solve) return solveprint(golden(f,0,1))]]></content>
@@ -418,19 +453,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[quandl.get]]></title>
-    <url>%2F2016%2F08%2F16%2Fquandl-get%2F</url>
-    <content type="text"><![CDATA[Make a time-series callThis call gets the WTI Crude Oil Price, which has a Quandl Code of EIA/PET_RWTC_D from the US Department of Energy dataset: data = quandl.get(“EIA/PET_RWTC_D”) Change formatsYou can get the same data in a NumPy array: data = quandl.get(“EIA/PET_RWTC_D”, returns=”numpy”) Make a filtered time-series callTo set start and end dates: data = quandl.get(“FRED/GDP”, start_date=”2001-12-31”, end_date=”2005-12-31”) To request specific columns: data = quandl.get([“NSE/OIL.1”, “WIKI/AAPL.4”]) To request the last 5 rows: data = quandl.get(“WIKI/AAPL”, rows=5) Preprocess the dataTo change the sampling frequency: data = quandl.get(“EIA/PET_RWTC_D”, collapse=”monthly”) To perform elementary calculations on the data: data = quandl.get(“FRED/GDP”, transformation=”rdiff”) Download an entire time-series datasetAn entire time-series dataset’s data can be downloaded. For example, to download the dataset ZEA: quandl.bulkdownload(“ZEA”) This call will download an entire time-series dataset as a ZIP file.]]></content>
-      <categories>
-        <category>programming/python/quandl</category>
-      </categories>
-      <tags>
-        <tag>quandl</tag>
-        <tag>get</tag>
-        <tag>api</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[qaundl dataset codes]]></title>
     <url>%2F2016%2F08%2F16%2Fqaundl-dataset-codes%2F</url>
     <content type="text"><![CDATA[Quandl CodesTo download a dataset, you will need to know its “Quandl code”. In the above example, you downloaded a dataset with the Quandl code “WIKI/FB”. Every Quandl code has 2 parts: the database code (“WIKI”) which specifies where the data comes from, and the dataset code (“FB”) which identifies the specific time series you want. You can find Quandl codes on our website, using our data browser.https://www.quandl.com/search]]></content>
@@ -442,6 +464,19 @@
         <tag>get</tag>
         <tag>api</tag>
         <tag>dataset codes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[quandl.get]]></title>
+    <url>%2F2016%2F08%2F16%2Fquandl-get%2F</url>
+    <content type="text"><![CDATA[Make a time-series callThis call gets the WTI Crude Oil Price, which has a Quandl Code of EIA/PET_RWTC_D from the US Department of Energy dataset: data = quandl.get(“EIA/PET_RWTC_D”) Change formatsYou can get the same data in a NumPy array: data = quandl.get(“EIA/PET_RWTC_D”, returns=”numpy”) Make a filtered time-series callTo set start and end dates: data = quandl.get(“FRED/GDP”, start_date=”2001-12-31”, end_date=”2005-12-31”) To request specific columns: data = quandl.get([“NSE/OIL.1”, “WIKI/AAPL.4”]) To request the last 5 rows: data = quandl.get(“WIKI/AAPL”, rows=5) Preprocess the dataTo change the sampling frequency: data = quandl.get(“EIA/PET_RWTC_D”, collapse=”monthly”) To perform elementary calculations on the data: data = quandl.get(“FRED/GDP”, transformation=”rdiff”) Download an entire time-series datasetAn entire time-series dataset’s data can be downloaded. For example, to download the dataset ZEA: quandl.bulkdownload(“ZEA”) This call will download an entire time-series dataset as a ZIP file.]]></content>
+      <categories>
+        <category>programming/python/quandl</category>
+      </categories>
+      <tags>
+        <tag>quandl</tag>
+        <tag>get</tag>
+        <tag>api</tag>
       </tags>
   </entry>
   <entry>

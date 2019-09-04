@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Empirical Asset Pricing via Machine Learning]]></title>
+    <url>%2F2019%2F09%2F04%2FEmpirical-Asset-Pricing-via-Machine-Learning%2F</url>
+    <content type="text"><![CDATA[Shihao GuBryan KellyDacheng Xiu]]></content>
+      <categories>
+        <category>economics/finance/asset pricing</category>
+      </categories>
+      <tags>
+        <tag>asset pricing</tag>
+        <tag>machine learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[sklearn.covariance]]></title>
     <url>%2F2019%2F08%2F26%2Fsklearn-covariance%2F</url>
     <content type="text"></content>
@@ -15,47 +27,6 @@
       <tags>
         <tag>杂思妄想</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[正向激励和非均衡数据集、损失函数加权重]]></title>
-    <url>%2F2019%2F08%2F20%2F%E6%AD%A3%E5%90%91%E6%BF%80%E5%8A%B1%E5%92%8C%E9%9D%9E%E5%9D%87%E8%A1%A1%E6%95%B0%E6%8D%AE%E9%9B%86%E3%80%81%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%8A%A0%E6%9D%83%E9%87%8D%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[行为经济学的八大原理]]></title>
-    <url>%2F2019%2F08%2F17%2F%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>economics/behavioral economics</category>
-      </categories>
-      <tags>
-        <tag>行为经济学的八大原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[无约束优化问题的数值算法]]></title>
-    <url>%2F2019%2F08%2F17%2F%E6%97%A0%E7%BA%A6%E6%9D%9F%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9A%84%E6%95%B0%E5%80%BC%E7%AE%97%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[无约束优化问题的数值算法最速下降法Newton法共轭梯度法变尺度法直接法 坐标轮换法 步长加速法 方向加速法]]></content>
-      <categories>
-        <category>mant/algorithm</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[什么是钩子]]></title>
-    <url>%2F2019%2F08%2F15%2F%E4%BB%80%E4%B9%88%E6%98%AF%E9%92%A9%E5%AD%90%2F</url>
-    <content type="text"><![CDATA[对于Windows系统，它是建立在事件驱动机制上的，说白了就是整个系统都是通过消息传递实现的。hook（钩子）是一种特殊的消息处理机制，它可以监视系统或者进程中的各种事件消息，截获发往目标窗口的消息并进行处理。所以说，我们可以在系统中自定义钩子，用来监视系统中特定事件的发生，完成特定功能，如屏幕取词，监视日志，截获键盘、鼠标输入等等。 钩子的种类很多，每种钩子可以截获相应的消息，如键盘钩子可以截获键盘消息，外壳钩子可以截取、启动和关闭应用程序的消息等。钩子可以分为线程钩子和系统钩子，线程钩子可以监视指定线程的事件消息，系统钩子监视系统中的所有线程的事件消息。因为系统钩子会影响系统中所有的应用程序，所以钩子函数必须放在独立的动态链接库(DLL) 中。 所以说，hook（钩子）就是一个Windows消息的拦截机制，可以拦截单个进程的消息(线程钩子)，也可以拦截所有进程的消息(系统钩子)，也可以对拦截的消息进行自定义的处理。Windows消息带了一些程序有用的信息，比如Mouse类信息，就带有鼠标所在窗体句柄、鼠标位置等信息，拦截了这些消息，就可以做出例如金山词霸一类的屏幕取词功能。]]></content>
-      <categories>
-        <category>programming/nodejs</category>
-      </categories>
-      <tags>
-        <tag>concept</tag>
-        <tag>hook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[从测度论视角理解傅里叶变换和音频降噪]]></title>
-    <url>%2F2019%2F08%2F14%2F%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%86%E8%A7%92%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%9F%B3%E9%A2%91%E9%99%8D%E5%99%AA%2F</url>
-    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[conda的包路径查找]]></title>
@@ -212,11 +183,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[python可视化 dash]]></title>
-    <url>%2F2018%2F08%2F13%2Fpython%E5%8F%AF%E8%A7%86%E5%8C%96-dash%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[django-plotly-dash文件结构]]></title>
     <url>%2F2018%2F04%2F18%2Fdjango-plotly-dash%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%2F</url>
     <content type="text"><![CDATA[django-plotly-dash文件结构 ./demo/ demo/ urls.py &lt;路由配置文件&gt; templates/ &lt;模板文件&gt; example.html django_plotly_dash/ django_plotly_dash.egg-info/ docs/]]></content>
@@ -229,8 +195,54 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[正向激励和非均衡数据集、损失函数加权重]]></title>
+    <url>%2F2017%2F08%2F20%2F%E6%AD%A3%E5%90%91%E6%BF%80%E5%8A%B1%E5%92%8C%E9%9D%9E%E5%9D%87%E8%A1%A1%E6%95%B0%E6%8D%AE%E9%9B%86%E3%80%81%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%8A%A0%E6%9D%83%E9%87%8D%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[行为经济学的八大原理]]></title>
+    <url>%2F2017%2F08%2F17%2F%E8%A1%8C%E4%B8%BA%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E5%85%AB%E5%A4%A7%E5%8E%9F%E7%90%86%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>economics/behavioral economics</category>
+      </categories>
+      <tags>
+        <tag>行为经济学的八大原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[无约束优化问题的数值算法]]></title>
+    <url>%2F2017%2F08%2F17%2F%E6%97%A0%E7%BA%A6%E6%9D%9F%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9A%84%E6%95%B0%E5%80%BC%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[无约束优化问题的数值算法最速下降法Newton法共轭梯度法变尺度法直接法 坐标轮换法 步长加速法 方向加速法]]></content>
+      <categories>
+        <category>mant/algorithm</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[什么是钩子]]></title>
+    <url>%2F2017%2F08%2F15%2F%E4%BB%80%E4%B9%88%E6%98%AF%E9%92%A9%E5%AD%90%2F</url>
+    <content type="text"><![CDATA[对于Windows系统，它是建立在事件驱动机制上的，说白了就是整个系统都是通过消息传递实现的。hook（钩子）是一种特殊的消息处理机制，它可以监视系统或者进程中的各种事件消息，截获发往目标窗口的消息并进行处理。所以说，我们可以在系统中自定义钩子，用来监视系统中特定事件的发生，完成特定功能，如屏幕取词，监视日志，截获键盘、鼠标输入等等。 钩子的种类很多，每种钩子可以截获相应的消息，如键盘钩子可以截获键盘消息，外壳钩子可以截取、启动和关闭应用程序的消息等。钩子可以分为线程钩子和系统钩子，线程钩子可以监视指定线程的事件消息，系统钩子监视系统中的所有线程的事件消息。因为系统钩子会影响系统中所有的应用程序，所以钩子函数必须放在独立的动态链接库(DLL) 中。 所以说，hook（钩子）就是一个Windows消息的拦截机制，可以拦截单个进程的消息(线程钩子)，也可以拦截所有进程的消息(系统钩子)，也可以对拦截的消息进行自定义的处理。Windows消息带了一些程序有用的信息，比如Mouse类信息，就带有鼠标所在窗体句柄、鼠标位置等信息，拦截了这些消息，就可以做出例如金山词霸一类的屏幕取词功能。]]></content>
+      <categories>
+        <category>programming/nodejs</category>
+      </categories>
+      <tags>
+        <tag>concept</tag>
+        <tag>hook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[从测度论视角理解傅里叶变换和音频降噪]]></title>
+    <url>%2F2017%2F08%2F14%2F%E4%BB%8E%E6%B5%8B%E5%BA%A6%E8%AE%BA%E8%A7%86%E8%A7%92%E7%90%86%E8%A7%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%92%8C%E9%9F%B3%E9%A2%91%E9%99%8D%E5%99%AA%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[量化交易dash框架]]></title>
     <url>%2F2017%2F08%2F13%2F%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93dash%E6%A1%86%E6%9E%B6%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python可视化 dash]]></title>
+    <url>%2F2017%2F08%2F13%2Fpython%E5%8F%AF%E8%A7%86%E5%8C%96-dash%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -381,8 +393,8 @@
         <category>programming/python/machine learning</category>
       </categories>
       <tags>
-        <tag>数据维度转换</tag>
         <tag>machine learning</tag>
+        <tag>数据维度转换</tag>
       </tags>
   </entry>
   <entry>
@@ -453,6 +465,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[quandl.get]]></title>
+    <url>%2F2016%2F08%2F16%2Fquandl-get%2F</url>
+    <content type="text"><![CDATA[Make a time-series callThis call gets the WTI Crude Oil Price, which has a Quandl Code of EIA/PET_RWTC_D from the US Department of Energy dataset: data = quandl.get(“EIA/PET_RWTC_D”) Change formatsYou can get the same data in a NumPy array: data = quandl.get(“EIA/PET_RWTC_D”, returns=”numpy”) Make a filtered time-series callTo set start and end dates: data = quandl.get(“FRED/GDP”, start_date=”2001-12-31”, end_date=”2005-12-31”) To request specific columns: data = quandl.get([“NSE/OIL.1”, “WIKI/AAPL.4”]) To request the last 5 rows: data = quandl.get(“WIKI/AAPL”, rows=5) Preprocess the dataTo change the sampling frequency: data = quandl.get(“EIA/PET_RWTC_D”, collapse=”monthly”) To perform elementary calculations on the data: data = quandl.get(“FRED/GDP”, transformation=”rdiff”) Download an entire time-series datasetAn entire time-series dataset’s data can be downloaded. For example, to download the dataset ZEA: quandl.bulkdownload(“ZEA”) This call will download an entire time-series dataset as a ZIP file.]]></content>
+      <categories>
+        <category>programming/python/quandl</category>
+      </categories>
+      <tags>
+        <tag>quandl</tag>
+        <tag>get</tag>
+        <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[qaundl dataset codes]]></title>
     <url>%2F2016%2F08%2F16%2Fqaundl-dataset-codes%2F</url>
     <content type="text"><![CDATA[Quandl CodesTo download a dataset, you will need to know its “Quandl code”. In the above example, you downloaded a dataset with the Quandl code “WIKI/FB”. Every Quandl code has 2 parts: the database code (“WIKI”) which specifies where the data comes from, and the dataset code (“FB”) which identifies the specific time series you want. You can find Quandl codes on our website, using our data browser.https://www.quandl.com/search]]></content>
@@ -464,19 +489,6 @@
         <tag>get</tag>
         <tag>api</tag>
         <tag>dataset codes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[quandl.get]]></title>
-    <url>%2F2016%2F08%2F16%2Fquandl-get%2F</url>
-    <content type="text"><![CDATA[Make a time-series callThis call gets the WTI Crude Oil Price, which has a Quandl Code of EIA/PET_RWTC_D from the US Department of Energy dataset: data = quandl.get(“EIA/PET_RWTC_D”) Change formatsYou can get the same data in a NumPy array: data = quandl.get(“EIA/PET_RWTC_D”, returns=”numpy”) Make a filtered time-series callTo set start and end dates: data = quandl.get(“FRED/GDP”, start_date=”2001-12-31”, end_date=”2005-12-31”) To request specific columns: data = quandl.get([“NSE/OIL.1”, “WIKI/AAPL.4”]) To request the last 5 rows: data = quandl.get(“WIKI/AAPL”, rows=5) Preprocess the dataTo change the sampling frequency: data = quandl.get(“EIA/PET_RWTC_D”, collapse=”monthly”) To perform elementary calculations on the data: data = quandl.get(“FRED/GDP”, transformation=”rdiff”) Download an entire time-series datasetAn entire time-series dataset’s data can be downloaded. For example, to download the dataset ZEA: quandl.bulkdownload(“ZEA”) This call will download an entire time-series dataset as a ZIP file.]]></content>
-      <categories>
-        <category>programming/python/quandl</category>
-      </categories>
-      <tags>
-        <tag>quandl</tag>
-        <tag>get</tag>
-        <tag>api</tag>
       </tags>
   </entry>
   <entry>

@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="123456789101112131415161718192021222324&quot;&quot;&quot;    demo_01_fill.py plot里的填充&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltx = np.linspace(0, 8*np.pi, 1000)sinx = np.sin(x)cosx = np.cos(x/2)/2plt.figur">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-fill-between/08/09/matplotlib-pyplot-fill-between/fill_between.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-fill-between/fill_between.png">
 <meta property="og:updated_time" content="2019-08-09T03:41:51.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.pyplot.fill_between">
 <meta name="twitter:description" content="123456789101112131415161718192021222324&quot;&quot;&quot;    demo_01_fill.py plot里的填充&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as pltx = np.linspace(0, 8*np.pi, 1000)sinx = np.sin(x)cosx = np.cos(x/2)/2plt.figur">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-fill-between/08/09/matplotlib-pyplot-fill-between/fill_between.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-fill-between/fill_between.png">
 
 
 
@@ -460,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo_01_fill.py plot里的填充</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = np.linspace(<span class="number">0</span>, <span class="number">8</span>*np.pi, <span class="number">1000</span>)</span><br><span class="line">sinx = np.sin(x)</span><br><span class="line">cosx = np.cos(x/<span class="number">2</span>)/<span class="number">2</span></span><br><span class="line"></span><br><span class="line">plt.figure(<span class="string">'Fill'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Fill'</span>, fontsize=<span class="number">18</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">plt.plot(x, sinx, color=<span class="string">'dodgerblue'</span>,</span><br><span class="line">         label=<span class="string">'sin(x)'</span>)</span><br><span class="line">plt.plot(x, cosx, color=<span class="string">'orangered'</span>,</span><br><span class="line">         label=<span class="string">'cos(x)'</span>)</span><br><span class="line">plt.fill_between(x, sinx, cosx, sinx&lt;cosx,</span><br><span class="line">                 color=<span class="string">'dodgerblue'</span>, alpha=<span class="number">.3</span>)</span><br><span class="line">plt.fill_between(x, sinx, cosx, sinx&gt;cosx,</span><br><span class="line">                 color=<span class="string">'orangered'</span>, alpha=<span class="number">.3</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.savefig(<span class="string">'fill_between.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/08/09/matplotlib-pyplot-fill-between/08/09/matplotlib-pyplot-fill-between/fill_between.png" alt="fill_between"></p>
+<p><img src="/2016/08/09/matplotlib-pyplot-fill-between/fill_between.png" alt="fill_between"></p>
 
       
     </div>
@@ -621,7 +621,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">73</span>
+                  <span class="site-state-item-count">71</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -643,7 +643,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">117</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

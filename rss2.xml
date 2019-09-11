@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人拥有此生此世是不够的，他还需要一个诗意的世界。</description>
-    <pubDate>Wed, 04 Sep 2019 01:54:37 GMT</pubDate>
+    <pubDate>Wed, 11 Sep 2019 02:12:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -21,12 +21,12 @@
         
         
           &lt;p&gt;Shihao Gu&lt;br&gt;Bryan Kelly&lt;br&gt;Dacheng Xiu&lt;/p&gt;
-
+&lt;p&gt;methods：&lt;br&gt;item is asset (one asset level)&lt;br&gt;1    predictors –&amp;gt; return –&amp;gt; portfoli
         
       
       </description>
       
-      <content:encoded><![CDATA[<p>Shihao Gu<br>Bryan Kelly<br>Dacheng Xiu</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>Shihao Gu<br>Bryan Kelly<br>Dacheng Xiu</p><p>methods：<br>item is asset (one asset level)<br>1    predictors –&gt; return –&gt; portfolio selection</p><p>2    predictors –&gt; covariance –&gt; portfolio selection<br>    Can Machine Learning-Based Portfolios Outperform Traditional<br>    Risk-Based Portfolios?</p><p>3    predictors –&gt; return covariance, skewness… –&gt; portfolio selection</p><p>item is portfolio (portfolios level)<br>4    preditors –&gt; portfolios’ return –&gt; portfolio selection<br>5    predictors –&gt; portfolios’ attributes –&gt; portfolio selection</p>]]></content:encoded>
       
       <comments>https://www.exobrain.online/2019/09/04/Empirical-Asset-Pricing-via-Machine-Learning/#disqus_thread</comments>
     </item>
@@ -128,18 +128,6 @@
     </item>
     
     <item>
-      <title>hexo使用日常</title>
-      <link>https://www.exobrain.online/2019/08/10/hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8/</link>
-      <guid>https://www.exobrain.online/2019/08/10/hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8/</guid>
-      <pubDate>Sat, 10 Aug 2019 07:54:07 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://www.exobrain.online/2019/08/10/hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E5%B8%B8/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>pandas read_table</title>
       <link>https://www.exobrain.online/2019/08/09/pandas-read-table/</link>
       <guid>https://www.exobrain.online/2019/08/09/pandas-read-table/</guid>
@@ -176,6 +164,18 @@
       <content:encoded><![CDATA[<p><a href="https://uqer.io/v3/community/share/57b52ac0228e5b79aa759416" target="_blank" rel="noopener">https://uqer.io/v3/community/share/57b52ac0228e5b79aa759416</a></p>]]></content:encoded>
       
       <comments>https://www.exobrain.online/2019/08/09/%E5%95%86%E5%93%81%E6%9C%9F%E8%B4%A7%E5%8D%8F%E6%95%B4%E9%85%8D%E5%AF%B9/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>平稳性检验</title>
+      <link>https://www.exobrain.online/2019/08/09/%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C/</link>
+      <guid>https://www.exobrain.online/2019/08/09/%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C/</guid>
+      <pubDate>Fri, 09 Aug 2019 05:26:00 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://www.exobrain.online/2019/08/09/%E5%B9%B3%E7%A8%B3%E6%80%A7%E6%A3%80%E9%AA%8C/#disqus_thread</comments>
     </item>
     
   </channel>

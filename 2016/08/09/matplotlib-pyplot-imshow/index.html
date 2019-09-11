@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="123456789101112131415161718192021&quot;&quot;&quot;    demo04_imshow.py 绘制热成像图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n),                   np.linspace(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-imshow/08/09/matplotlib-pyplot-imshow/Imshow.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-imshow/Imshow.png">
 <meta property="og:updated_time" content="2019-08-09T11:14:37.824Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.pyplot.imshow">
 <meta name="twitter:description" content="123456789101112131415161718192021&quot;&quot;&quot;    demo04_imshow.py 绘制热成像图&quot;&quot;&quot;import numpy as npimport matplotlib.pyplot as plt# 整理数据n = 500x, y = np.meshgrid(np.linspace(-3, 3, n),                   np.linspace(">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-imshow/08/09/matplotlib-pyplot-imshow/Imshow.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/09/matplotlib-pyplot-imshow/Imshow.png">
 
 
 
@@ -460,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo04_imshow.py 绘制热成像图</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 整理数据</span></span><br><span class="line">n = <span class="number">500</span></span><br><span class="line">x, y = np.meshgrid(np.linspace(<span class="number">-3</span>, <span class="number">3</span>, n),</span><br><span class="line">                   np.linspace(<span class="number">-3</span>, <span class="number">3</span>, n))</span><br><span class="line"><span class="comment"># print(x, y)</span></span><br><span class="line"><span class="comment"># 计算每个坐标点的高度</span></span><br><span class="line">z = (<span class="number">1</span> - x/<span class="number">2</span> + x**<span class="number">5</span> + y**<span class="number">3</span>) * np.exp(-x**<span class="number">2</span> - y**<span class="number">2</span>)</span><br><span class="line"><span class="comment"># 绘制等高线</span></span><br><span class="line">plt.figure(<span class="string">'Imshow'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'Imshow'</span>, fontsize=<span class="number">18</span>)</span><br><span class="line">plt.grid(linestyle=<span class="string">':'</span>)</span><br><span class="line">plt.imshow(z, cmap=<span class="string">'jet'</span>, origin=<span class="string">'lower'</span>)</span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.savefig(<span class="string">'Imshow.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/08/09/matplotlib-pyplot-imshow/08/09/matplotlib-pyplot-imshow/Imshow.png" alt="Imshow"></p>
+<p><img src="/2016/08/09/matplotlib-pyplot-imshow/Imshow.png" alt="Imshow"></p>
 
       
     </div>
@@ -621,7 +621,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">73</span>
+                  <span class="site-state-item-count">71</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -643,7 +643,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">117</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

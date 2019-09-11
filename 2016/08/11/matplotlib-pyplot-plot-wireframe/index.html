@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="ExoBrain">
 <meta property="og:description" content="123456789101112131415161718192021222324252627282930&quot;&quot;&quot;    demo07_3d_wireframe.py 3d 曲面图&quot;&quot;&quot;import matplotlib.pyplot as pltfrom mpl_toolkits.mplot3d import axes3dimport numpy as np# 整理数据n = 500x, y = np">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-plot-wireframe/08/11/matplotlib-pyplot-plot-wireframe/3d_wireframe.png">
+<meta property="og:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-plot-wireframe/3d_wireframe.png">
 <meta property="og:updated_time" content="2019-08-09T11:42:37.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matplotlib.pyplot.plot_wireframe">
 <meta name="twitter:description" content="123456789101112131415161718192021222324252627282930&quot;&quot;&quot;    demo07_3d_wireframe.py 3d 曲面图&quot;&quot;&quot;import matplotlib.pyplot as pltfrom mpl_toolkits.mplot3d import axes3dimport numpy as np# 整理数据n = 500x, y = np">
-<meta name="twitter:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-plot-wireframe/08/11/matplotlib-pyplot-plot-wireframe/3d_wireframe.png">
+<meta name="twitter:image" content="https://www.exobrain.online/2016/08/11/matplotlib-pyplot-plot-wireframe/3d_wireframe.png">
 
 
 
@@ -460,7 +460,7 @@
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">    demo07_3d_wireframe.py 3d 曲面图</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> mpl_toolkits.mplot3d <span class="keyword">import</span> axes3d</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 整理数据</span></span><br><span class="line">n = <span class="number">500</span></span><br><span class="line">x, y = np.meshgrid(np.linspace(<span class="number">-3</span>, <span class="number">3</span>, n),</span><br><span class="line">                   np.linspace(<span class="number">-3</span>, <span class="number">3</span>, n))</span><br><span class="line"><span class="comment"># print(x, y)</span></span><br><span class="line"><span class="comment"># 计算每个坐标点的高度</span></span><br><span class="line">z = (<span class="number">1</span> - x/<span class="number">2</span> + x**<span class="number">5</span> + y**<span class="number">3</span>) * np.exp(-x**<span class="number">2</span> - y**<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制</span></span><br><span class="line">plt.figure(<span class="string">'3D surface'</span>, facecolor=<span class="string">'lightgray'</span>)</span><br><span class="line">plt.title(<span class="string">'3D Surface'</span>, fontsize=<span class="number">18</span>)</span><br><span class="line">ax3d = plt.gca(projection=<span class="string">'3d'</span>)  <span class="comment"># class axes3d</span></span><br><span class="line">ax3d.set_xlabel(<span class="string">'x'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">ax3d.set_ylabel(<span class="string">'y'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">ax3d.set_zlabel(<span class="string">'z'</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">ax3d.plot_wireframe(x, y, z, cmap=<span class="string">'jet'</span>, rstride=<span class="number">30</span>, cstride=<span class="number">30</span>)</span><br><span class="line">plt.tick_params(labelsize=<span class="number">10</span>)</span><br><span class="line"><span class="comment"># set spines invisible for error of tight_layout()</span></span><br><span class="line"><span class="keyword">for</span> spine <span class="keyword">in</span> ax3d.spines.values():</span><br><span class="line">    spine.set_visible(<span class="literal">False</span>)</span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.savefig(<span class="string">'3d_wireframe.png'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2016/08/11/matplotlib-pyplot-plot-wireframe/08/11/matplotlib-pyplot-plot-wireframe/3d_wireframe.png" alt></p>
+<p><img src="/2016/08/11/matplotlib-pyplot-plot-wireframe/3d_wireframe.png" alt></p>
 
       
     </div>
@@ -621,7 +621,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">73</span>
+                  <span class="site-state-item-count">71</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -643,7 +643,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">117</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
